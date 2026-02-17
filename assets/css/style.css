@@ -177,3 +177,11 @@ img{ max-width: 100%; height: auto; }
     height: 96px;
   }
 }
+
+.cn-name{
+  margin-top: -12px;
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #13294B;
+  font-weight: 500;
+}
