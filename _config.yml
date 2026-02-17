@@ -22,7 +22,8 @@ enable_last_update: false
 # Links
 link_type: icon #text/icon
 linkedin: https://www.linkedin.com/in/yiguangzhu/
-
+cv_link: /assets/files/CV_Feb_2026_Yiguang_Zhu.pdf
+resume_link: /assets/files/Resume_Feb_2026_Yiguang.pdf
 
 # Images 
 avatar: ./assets/img/avatar.jpg
