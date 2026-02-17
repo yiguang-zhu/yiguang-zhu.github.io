@@ -103,13 +103,15 @@
       
       /* 1. 橙色渐变高亮 (Highlight Orange) */
       .highlight {
-          background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%); /* 柔和的橙色 */
-          background-repeat: no-repeat;
-          background-size: 100% 40%; /* 只显示下半部分 40% 的高度 */
-          background-position: 0 90%; /* 位置靠下 */
-          padding: 0 2px;
-          font-weight: 600; /* 加粗一点更明显 */
-          color: inherit;   /* 保持文字原有颜色，防止暗色模式看不清 */
+          /* 核心代码：线性渐变，方向从上到下 (to bottom) */
+          /* 前 55% 是透明的 (transparent)，从 55% 的位置瞬间变成爱马仕橙 (#fc6821) */
+          background: linear-gradient(to bottom, transparent 55%, #fc6821 55%);
+          
+          /* 其他辅助样式 */
+          padding: 0 2px;    /* 左右留一点空隙 */
+          font-weight: 500;  /* 字体稍微加粗，更有强调感 */
+          color: inherit;    /* 确保文字颜色不变（黑字），对比更清晰 */
+          text-decoration: none; /* 防止可能的下划线干扰 */
       }
 
       /* 2. 强力橙色背景 (Strong Orange) */
