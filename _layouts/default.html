@@ -101,18 +101,23 @@
 
 /* === 新增：高亮样式 (直接写在这里最稳妥) === */
       
-      /* 1. 橙色渐变高亮 (Highlight Orange) */
+      /* Orange highlight that fades upward (strong at bottom → transparent at top) */
       .highlight {
-          /* 核心代码：线性渐变，方向从上到下 (to bottom) */
-          /* 前 55% 是透明的 (transparent)，从 55% 的位置瞬间变成爱马仕橙 (#fc6821) */
-          background: linear-gradient(to bottom, transparent 55%, #fc6821 55%);
-          
-          /* 其他辅助样式 */
-          padding: 0 2px;    /* 左右留一点空隙 */
-          font-weight: 500;  /* 字体稍微加粗，更有强调感 */
-          color: inherit;    /* 确保文字颜色不变（黑字），对比更清晰 */
-          text-decoration: none; /* 防止可能的下划线干扰 */
+        background-image: linear-gradient(
+          to top,
+          rgba(252, 182, 159, 0.95) 0%,   /* 底部最浓 */
+          rgba(252, 182, 159, 0.65) 35%,
+          rgba(255, 236, 210, 0.35) 70%,
+          rgba(255, 236, 210, 0.00) 100%  /* 顶部透明 */
+        );
+        background-repeat: no-repeat;
+        background-size: 100% 0.95em;     /* 高亮带高度：可调 0.8em~1.1em */
+        background-position: 0 100%;      /* 贴着文字底部 */
+        padding: 0 2px;
+        font-weight: 600;
+        color: inherit;
       }
+
 
       /* 2. 强力橙色背景 (Strong Orange) */
       .highlight-strong {
