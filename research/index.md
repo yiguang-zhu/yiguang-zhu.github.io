@@ -5,22 +5,21 @@ permalink: /research/
 ---
 
 <details open>
-  <summary><strong>NAMs (New Approach Methods)</strong></summary>
+  <summary><strong>Alternative Methods to Animal Testing</strong></summary>
 
-  <h3 style="margin-top:14px;">Peer-reviewed journal articles</h3>
   <ul>
     <li>
-      <a href="https://doi.org/xxxx" target="_blank" rel="noopener">Paper title here</a>
-      <br><small>Authors · Journal · Year</small>
+      <a href="https://doi.org/10.1016/j.bios.2024.117082" target="_blank" rel="noopener">
+      <strong>Effect of Electrochemical Topology on Detection Sensitivity in MEA Assay for Drug-Induced Cardiotoxicity Screening</strong>
+      </a>
+      <br><small>Kim, B., Choi, J. S., Zhu, Y., Kim, J., Kim, Y.S., Parra, A., Locke, P.A., Kim, J.H., Herron,T., & Kim, D.-H. </small>
+      <br><small><em>Biosensors and Bioelectronics</em>, 2025</small>
     </li>
     <li>
       <a href="https://doi.org/xxxx" target="_blank" rel="noopener">Paper title here</a>
       <br><small>Authors · Journal · Year</small>
     </li>
-  </ul>
 
-  <h3>Conference presentations</h3>
-  <ul>
     <li>
       Talk/Poster title · Conference · City · Year
       {% raw %}<!-- optional: add a link to slides/poster PDF -->{% endraw %}
