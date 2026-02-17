@@ -14,7 +14,4 @@ My research interests include:
 
 Previously, I completed my ScM at Johns Hopkins University and earned my BS in Environmental Systems Engineering at Penn State.
 
-
-{% include_relative _includes/news.md %}
-
 {% include_relative _includes/contact.md %}
