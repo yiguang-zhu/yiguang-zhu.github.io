@@ -291,3 +291,13 @@ hr { border: 0; background: #e5e5e5; height: 1px; margin: 0 0 20px; }
 .biblink { text-decoration: none; display: inline; margin-right: 0px; }
 .fakelink { text-decoration: none; cursor: pointer; }
 .bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
+
+/* --- Fix: offset for fixed top banner --- */
+html{
+  scroll-padding-top: var(--banner-h, 56px);
+}
+
+body{
+  padding-top: var(--banner-h, 56px);
+}
+
