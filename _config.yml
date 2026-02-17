@@ -43,20 +43,11 @@ exclude:
   - CNAME
 
 collections:
-  lifestyle:
-    output: true
-    permalink: /lifestyle/:name/
   random:
     output: true
     permalink: /random/:name/
 
 defaults:
-  - scope:
-      path: ""
-      type: lifestyle
-    values:
-      layout: default
-      author: Yiguang Zhu
   - scope:
       path: ""
       type: random
