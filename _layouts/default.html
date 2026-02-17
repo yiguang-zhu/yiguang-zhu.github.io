@@ -108,6 +108,11 @@
 
         <h1>{{ site.title }}</h1>
 
+        
+        {% if site.chinese_name %}
+        <div class="cn-name">{{ site.chinese_name }}</div>
+        {% endif %}
+
         {% if site.position %}
           <position style="font-size:1.10rem;">{{ site.position }}</position>
           <br>
@@ -129,7 +134,7 @@
           <email>{{ site.email2 }}</email>
         {% endif %}
 
-        <br><br>
+        <br>
 
         {% if site.link_type == 'text' %}
           [<a href="{{ site.google_scholar }}">Google Scholar</a>]
