@@ -4,7 +4,7 @@ title: Research
 permalink: /research/
 ---
 
-<details open>
+<details>
   <summary><strong>Alternative Methods to Animal Testing</strong></summary>
 
   <ul>
