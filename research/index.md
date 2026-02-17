@@ -62,28 +62,28 @@ permalink: /research/
     <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog45" target="_blank" rel="noopener">
     From Roadmap to Reality: Validating NAMs for FDA's Plan to Phase Out Animal Testing
     </a> 
-    <br>Yiguang Zhu · Tox Blog · 2025
+    <br><small>Yiguang Zhu · Tox Blog · 2025</small>
     </li>
 
     <li>
     <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog28" target="_blank" rel="noopener">
     Regulation Updates in China
     </a> 
-    <br>Yiguang Zhu · Tox Blog · 2024
+    <br><small>Yiguang Zhu · Tox Blog · 2024</small>
     </li>
  
     <li>
     <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog8" target="_blank" rel="noopener">
     Reimagining Legacy Animal Data Through the Lens of AI
     </a> 
-    <br>Yiguang Zhu · Tox Blog · 2023
+    <br><small>Yiguang Zhu · Tox Blog · 2023</small>
     </li>
 
     <li>
     <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog4" target="_blank" rel="noopener">
     ARPA-H: A Catalyst for Advancing Microphysiological Systems
     </a> 
-    <br>Yiguang Zhu · Tox Blog · 2023
+    <br><small>Yiguang Zhu · Tox Blog · 2023</small>
     </li>
     
   </ul>
