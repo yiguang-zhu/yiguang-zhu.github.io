@@ -6,8 +6,5 @@ main:
   - title: "Research"
     url: research/
 
-  - title: "Lifestyle"
-    url: lifestyle/
-
   - title: "Random"
     url: random/
