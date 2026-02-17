@@ -98,6 +98,28 @@
         line-height: 30px;
         height: 30px;
       }
+
+/* === 新增：高亮样式 (直接写在这里最稳妥) === */
+      
+      /* 1. 橙色渐变高亮 (Highlight Orange) */
+      .highlight {
+          background: linear-gradient(120deg, #ffecd2 0%, #fcb69f 100%); /* 柔和的橙色 */
+          background-repeat: no-repeat;
+          background-size: 100% 40%; /* 只显示下半部分 40% 的高度 */
+          background-position: 0 90%; /* 位置靠下 */
+          padding: 0 2px;
+          font-weight: 600; /* 加粗一点更明显 */
+          color: inherit;   /* 保持文字原有颜色，防止暗色模式看不清 */
+      }
+
+      /* 2. 强力橙色背景 (Strong Orange) */
+      .highlight-strong {
+          background-color: #FFD580; /* 实心橙色 */
+          padding: 2px 4px;
+          border-radius: 4px;
+          color: #000 !important; /* 强制黑色文字，防止背景太亮看不清白字 */
+      }
+      
     </style>
 
     <div class="wrapper">
