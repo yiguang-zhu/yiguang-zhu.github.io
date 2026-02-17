@@ -2,7 +2,7 @@
 layout: default
 title: "Negroni Sour"
 date: 2026-02-17
-category: Mixology
+category: 调酒 | Mixology
 ---
 
 ## Ingredients
