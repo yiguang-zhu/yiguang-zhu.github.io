@@ -3,8 +3,8 @@
   --banner-bg: #68ACE5;   /* BSPH Spirit Blue (浅蓝) */
   --banner-text: #000000; /* 黑色文字 */
   --banner-hover: rgba(255,255,255,0.45);
-  --logo-h: 30px;         /* logo高度：想小一点用 48/52，想大一点用 60 */
-  --banner-h: 30px;       /* 顶栏高度：可按视觉调 70~90 */
+  --logo-h: 60px;         /* logo高度：想小一点用 48/52，想大一点用 60 */
+  --banner-h: 10px;       /* 顶栏高度：可按视觉调 70~90 */
 }
 
 /* Top navigation bar */
