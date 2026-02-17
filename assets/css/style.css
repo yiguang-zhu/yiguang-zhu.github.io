@@ -144,3 +144,53 @@ footer { width: 232px; float: left; position: fixed; bottom: 30px; -webkit-font-
 .bibref { font-size: 70%; margin-top: 10px; margin-left: 0px; display: none; font-family: monospace; }
 
 /*# sourceMappingURL=style.css.map */
+
+/* ========================================= */
+/* Yiguang's Custom Hotfixes           */
+/* ========================================= */
+
+/* 1. 顶部横幅：背景变白，底部加细灰线 */
+.site-header, header {
+    background-color: #ffffff !important;
+    border-bottom: 1px solid #f0f0f0 !important;
+    border-top: none !important;
+    min-height: 80px !important; /* 保证高度足够 */
+    width: 100% !important;      /* 强制铺满全屏，防止被旧代码限制宽度 */
+    float: none !important;      /* 防止被旧代码变成侧边栏 */
+    position: relative !important;
+    padding-top: 0 !important;   /* 修正旧代码可能的内边距 */
+    text-align: left !important; /* 修正旧代码的居中 */
+}
+
+/* 2. Logo 图片：强制缩小 */
+/* 我们同时针对可能的两种写法进行限制，确保生效 */
+.site-title img, .header img, img.logo-img {
+    height: 50px !important;       /* 高度固定 50px */
+    width: auto !important;        /* 宽度自动，不拉伸 */
+    max-height: 50px !important;
+    margin-top: 5px;               /* 微调位置 */
+    border-radius: 0 !important;   /* 防止旧代码把 Logo 变成圆形 */
+    padding: 0 !important;         /* 去掉旧代码的内边距 */
+}
+
+/* 3. 导航栏文字：变成黑色 */
+.site-nav .page-link, .header a, .site-title {
+    color: #000000 !important;     /* 纯黑文字 */
+    font-weight: 500;              /* 字体稍微加粗 */
+    display: inline-block !important; /* 修正显示方式 */
+}
+
+/* 4. 修复手机端菜单按钮颜色 */
+.site-nav .menu-icon svg path {
+    fill: #000000 !important;
+}
+
+/* 5. 针对旧代码的防御性修正（防止侧边栏代码干扰） */
+body {
+    padding: 0 !important; /* 去掉旧代码的 50px padding */
+}
+div.wrapper {
+    width: 100% !important; /* 修正容器宽度 */
+    max-width: 1000px;      /* 限制最大宽度，阅读体验更好 */
+    margin: 0 auto;         /* 居中 */
+}
