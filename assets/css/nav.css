@@ -1,13 +1,16 @@
-/* ===== Banner / Top Nav (BSPH style) ===== */
+/* ===== Compact BSPH-like Top Nav (flex, centered) ===== */
 :root{
-  --banner-bg: #68ACE5;   /* BSPH Spirit Blue (浅蓝) */
-  --banner-text: #000000; /* 黑色文字 */
-  --banner-hover: rgba(255,255,255,0.45);
-  --logo-h: 60px;         /* logo高度：想小一点用 48/52，想大一点用 60 */
-  --banner-h: 10px;       /* 顶栏高度：可按视觉调 70~90 */
+  --banner-bg: #68ACE5;   /* BSPH Spirit Blue */
+  --banner-text: #000;
+  --banner-hover: rgba(255,255,255,.45);
+
+  --banner-h: 56px;       /* 顶栏高度：想更窄就 48/52 */
+  --logo-h: 50px;         /* logo 高度：建议略小于 banner */
+  --side-pad: 28px;       /* 左右留白 */
+  --link-gap: 22px;       /* 菜单项间距 */
 }
 
-/* Top navigation bar */
+/* Bar */
 .topnav{
   background-color: var(--banner-bg);
   position: fixed;
@@ -15,114 +18,100 @@
   left: 0;
   z-index: 999;
   width: 100%;
-  min-height: var(--banner-h);
-  overflow: hidden;
+  height: var(--banner-h);
+
+  display: flex;
+  align-items: center;          /* 垂直居中 */
+  justify-content: space-between;
+  padding: 0 var(--side-pad);
+  box-sizing: border-box;
 }
 
-/* Links container */
-.topnav #myLinks{
-  display: inline;
-}
-
-/* Hamburger icon hidden on desktop */
-.topnav a.icon{
-  display: none;
-}
-
-/* ===== Logo ===== */
-/* 覆盖 HTML 里的 width="120"：用 height 控制更稳定 */
+/* Logo (override any width="120" in HTML) */
 .topnav img{
   height: var(--logo-h) !important;
   width: auto !important;
   max-height: var(--logo-h) !important;
   object-fit: contain;
   display: block;
-
-  /* 你的原始布局（保持你现在的“居中偏右”风格） */
-  margin-top: 10px;
-  margin-bottom: 10px;
-  margin-left: 30%;
+  margin: 0 !important;         /* 关键：去掉 margin 才能“变窄” */
 }
 
-/* ===== Nav Links ===== */
+/* Nav links container (desktop) */
+.topnav #myLinks{
+  display: flex;
+  align-items: center;          /* 文字与 logo 同一水平线 */
+  gap: var(--link-gap);
+}
+
+/* Links */
 .topnav a.normal{
-  float: right;
+  float: none;                  /* 关键：不再用 float */
   color: var(--banner-text) !important;
-  text-align: center;
-  padding: 10px 9px;
   text-decoration: none;
   font-size: 17px;
+  padding: 0;                   /* 关键：去掉 padding 才能“变窄” */
+  height: var(--banner-h);
+  display: flex;                /* 关键：让文字在 banner 中垂直居中 */
+  align-items: center;
 }
 
-/* Hover */
 .topnav a.normal:hover{
   background-color: var(--banner-hover);
   color: var(--banner-text) !important;
 }
 
-/* right spacing */
-.topnav a.right{
-  margin-right: 30%;
-}
+/* 你之前用 right 来做 margin-right，这里不需要了，但保留不影响 */
+.topnav a.right{ margin-right: 0; }
+
+/* Hamburger icon hidden on desktop */
+.topnav a.icon{ display: none; }
 
 /* ===== Responsive ===== */
-@media print, screen and (max-width: 1000px){
-  .topnav img{ margin-left: 3%; }
-  .topnav a.right{ margin-right: 3%; }
-  .topnav a.normal{ padding: 10px 5px; }
-}
-
-@media print, screen and (max-width: 1200px) and (min-width: 1001px){
-  .topnav img{ margin-left: 6%; }
-  .topnav a.right{ margin-right: 6%; }
-}
-
-@media print, screen and (max-width: 1400px) and (min-width: 1201px){
-  .topnav img{ margin-left: 12%; }
-  .topnav a.right{ margin-right: 12%; }
-}
-
-@media print, screen and (max-width: 1600px) and (min-width: 1401px){
-  .topnav img{ margin-left: 16%; }
-  .topnav a.right{ margin-right: 16%; }
-}
-
-@media print, screen and (max-width: 1800px) and (min-width: 1601px){
-  .topnav img{ margin-left: 19%; }
-  .topnav a.right{ margin-right: 19%; }
-}
-
-@media print, screen and (max-width: 2000px) and (min-width: 1801px){
-  .topnav img{ margin-left: 22%; }
-  .topnav a.right{ margin-right: 22%; }
-}
-
-/* Small screens: collapse menu */
-@media print, screen and (max-width: 480px){
-  .topnav #myLinks{ display: none; }
-}
-
 @media print, screen and (max-width: 960px){
-  .topnav #myLinks{ display: none; }
-
-  .topnav a.normal{
-    color: var(--banner-text) !important;
-    float: none;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
+  .topnav{
+    padding: 0 14px;
   }
 
+  /* Hide links by default on mobile */
+  .topnav #myLinks{
+    display: none;
+  }
+
+  /* Show hamburger */
   .topnav a.icon{
+    display: flex;
+    align-items: center;
+    height: var(--banner-h);
     color: var(--banner-text) !important;
-    display: block;
-    padding: 10px 16px;
-    font-size: 17px;
+    text-decoration: none;
+    font-size: 18px;
+  }
+}
+
+/* Optional: when links are shown on mobile (if your JS toggles display), make them readable */
+@media print, screen and (max-width: 960px){
+  .topnav #myLinks[style*="display: inline"],
+  .topnav #myLinks[style*="display:inline"],
+  .topnav #myLinks[style*="display: block"],
+  .topnav #myLinks[style*="display:block"],
+  .topnav #myLinks[style*="display: flex"],
+  .topnav #myLinks[style*="display:flex"]{
     position: absolute;
+    top: var(--banner-h);
     right: 0;
-    top: 0;
-    margin-right: 5%;
+    left: 0;
+    background: var(--banner-bg);
+    display: flex !important;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 14px;
+    box-sizing: border-box;
   }
 
-  .topnav a.
+  .topnav #myLinks a.normal{
+    height: auto;
+    padding: 10px 0;
+    display: block;
+  }
+}
