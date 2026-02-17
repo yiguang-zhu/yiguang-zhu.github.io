@@ -5,8 +5,8 @@
   --banner-hover: rgba(255,255,255,.45);
 
   --banner-h: 56px;       /* 顶栏高度：想更窄就 48/52 */
-  --logo-h: 80px;         /* logo 高度：建议略小于 banner */
-  --side-pad: 100px;       /* 左右留白 */
+  --logo-h: 90px;         /* logo 高度：建议略小于 banner */
+  --side-pad: 150px;       /* 左右留白 */
   --link-gap: 22px;       /* 菜单项间距 */
 }
 
