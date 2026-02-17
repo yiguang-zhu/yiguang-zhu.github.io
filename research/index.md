@@ -8,6 +8,7 @@ permalink: /research/
   <summary><strong>Alternative Methods to Animal Testing</strong></summary>
 
   <ul>
+    /* ===== Peer-reviewed Journal Article ===== */
     <li>
       <a href="https://doi.org/10.1016/j.bios.2024.117082" target="_blank" rel="noopener">
       Effect of Electrochemical Topology on Detection Sensitivity in MEA Assay for Drug-Induced Cardiotoxicity Screening
@@ -15,9 +16,12 @@ permalink: /research/
       <br><small>Kim, B., Choi, J. S., Zhu, Y., Kim, J., Kim, Y.S., Parra, A., Locke, P.A., Kim, J.H., Herron,T., & Kim, D.-H. </small>
       <br><small><em>Biosensors and Bioelectronics</em>, 2025</small>
     </li>
+
+    /* ===== Conference ===== */
     <li>
-      <a href="https://doi.org/xxxx" target="_blank" rel="noopener">Paper title here</a>
-      <br><small>Authors · Journal · Year</small>
+      Virtual Lab Tour of Kim Lab with Q&A
+      <br><small>Zhu, Y., & Harriot, A. </small>
+      <br><small>Animal & Natural Resource Law Review (ANRLR) Symposium, East Lansing, MI, 2025</small>
     </li>
 
     <li>
