@@ -185,3 +185,9 @@ img{ max-width: 100%; height: auto; }
   color: #13294B;
   font-weight: 500;
 }
+
+半遮盖式（学术风）：颜色只出现在文字下半部分，不会遮挡文字，非常高级 */
+.highlight-gradual {
+    background: linear-gradient(to bottom, transparent 60%, #FFD580 60%);
+    padding: 0 2px;
+}
