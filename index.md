@@ -2,15 +2,16 @@
 layout: default
 ---
 
-<h1 id="about-me"></h1>
-
 Yiguang is a PhD Candidate in the [Department of Environmental Health and Engineering](https://ehe.jhu.edu/) at Johns Hopkins University, working with [Dr. Paul Locke](https://publichealth.jhu.edu/faculty/430/paul-a-locke), and affiliated with the [JHU Toxicology Policy Program](https://www.jhutoxicologypolicyresearch.org/).
 
-My research interests include:
+## Research interests
 <br />
-**Regulatory Science:** Bridging scientific advances and regulatory decision-making to accelerate the adoption of human-relevant, alternative methods to animal testing.
+My research focuses on the intersection of environmental health sciences and science policy. I specialize in the regulatory validation, qualification, and standardization of New Approach Methodologies (NAMs), particularly in vitro testing methods including Microphysiological System and organ-on-a-chip technologies. 
 <br />
-**Science Policy & Advocacy:** Translating technical evidence into actionable policy priorities through stakeholder engagement and scientific communication.
+By analyzing decision-making frameworks in drug, chemical, and medical product approval, I aim to advance evidence-based policymaking and accelerate the regulatory translation and implementation of innovative testing methods. 
 
-Previously, Yiguang earned his ScM in Environmental Health from Johns Hopkins Bloomberg School of Public Health and his BS in Environmental Systems Engineering from Pennsylvania State University.
+
+## Education
+ScM, Johns Hopkins Bloomberg School of Public Health, 2021
+BS, Pennsylvania State University, 2019
 
