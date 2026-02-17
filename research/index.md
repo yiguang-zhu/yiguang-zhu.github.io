@@ -10,7 +10,7 @@ permalink: /research/
   <ul>
     <li>
       <a href="https://doi.org/10.1016/j.bios.2024.117082" target="_blank" rel="noopener">
-      <strong>Effect of Electrochemical Topology on Detection Sensitivity in MEA Assay for Drug-Induced Cardiotoxicity Screening</strong>
+      Effect of Electrochemical Topology on Detection Sensitivity in MEA Assay for Drug-Induced Cardiotoxicity Screening
       </a>
       <br><small>Kim, B., Choi, J. S., Zhu, Y., Kim, J., Kim, Y.S., Parra, A., Locke, P.A., Kim, J.H., Herron,T., & Kim, D.-H. </small>
       <br><small><em>Biosensors and Bioelectronics</em>, 2025</small>
