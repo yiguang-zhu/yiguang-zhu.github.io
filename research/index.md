@@ -27,10 +27,24 @@ permalink: /research/
     <br><small>Poster Presentation by Zhu, Y., & Locke, P.A.</small>
     <br><small>EHE Research Retreat Poster Session, Baltimore, MD. 2025</small>
     </li>
+
+    <li>
+    <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog45" target="_blank" rel="noopener">
+    From Roadmap to Reality: Validating NAMs for FDA's Plan to Phase Out Animal Testing
+    </a> 
+    <br><small>Yiguang Zhu · Tox Blog · 2025</small>
+    </li>
+
+    <li>
+    <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog28" target="_blank" rel="noopener">
+    Regulation Updates in China
+    </a> 
+    <br><small>Yiguang Zhu · Tox Blog · 2024</small>
+    </li>
     
     <li>
     Automated and Scalable Muscle Tissue System with Magnetic-based Functional Evaluation
-    <br><small>Presentation by Ren, Z., Kim, B., Go, G., Wang, H., Zhu, Y., Akarapipad, P., Loyola, A., Matsubara, T., Criscione, J., Lee, D., Herron, T., & Kim, D.</small>
+    <br><small>Poster Presentation by Ren, Z., Kim, B., Go, G., Wang, H., Zhu, Y., Akarapipad, P., Loyola, A., Matsubara, T., Criscione, J., Lee, D., Herron, T., & Kim, D.</small>
     <br><small>Biomedical Engineering Society 2024 Annual Meeting (BMES 2024), Baltimore, MD. 2024</small>
     </li>
 
@@ -56,20 +70,6 @@ permalink: /research/
     Recommendations for Promoting the Regulatory Acceptance of Microphysiological Systems
     <br><small>Oral Presentation by Zhu, Y., & Locke, P.A.</small>
     <br><small>12th World Congress on Alternatives and Animal Use in the Life Sciences (WC12), Niagara Falls, Canada. 2023</small>
-    </li>
-
-    <li>
-    <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog45" target="_blank" rel="noopener">
-    From Roadmap to Reality: Validating NAMs for FDA's Plan to Phase Out Animal Testing
-    </a> 
-    <br><small>Yiguang Zhu · Tox Blog · 2025</small>
-    </li>
-
-    <li>
-    <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog28" target="_blank" rel="noopener">
-    Regulation Updates in China
-    </a> 
-    <br><small>Yiguang Zhu · Tox Blog · 2024</small>
     </li>
  
     <li>
