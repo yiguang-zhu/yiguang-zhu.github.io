@@ -1,44 +1,51 @@
 ---
 layout: null
+permalink: /sitemap.xml
 ---
+
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <url>
-    <loc>{{ site.url }}/</loc>
-    <priority>1.0</priority>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>weekly</changefreq>
-  </url>
+  {% assign base = site.canonical | default: site.url | default: "" %}
 
+  {%- comment -%} 1) 普通页面 (pages) {%- endcomment -%}
+  {% for page in site.pages %}
+    {% assign u = page.url | default: "" %}
+    {% if u != "" %}
+      {% if page.sitemap != false
+            and page.name != "sitemap.xml"
+            and u != "/404.html"
+            and u != "/robots.txt" %}
   <url>
-    <loc>{{ site.url }}/publications/</loc>
-    <priority>1.0</priority>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>{{ base }}{{ u | replace: "index.html", "" }}</loc>
+    <lastmod>{{ page.date | default: site.time | date_to_xmlschema }}</lastmod>
   </url>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
 
+  {%- comment -%} 2) 博客文章 (posts) {%- endcomment -%}
+  {% for post in site.posts %}
+    {% if post.sitemap != false %}
   <url>
-    <loc>{{ site.url }}/talks/</loc>
-    <priority>0.8</priority>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>{{ base }}{{ post.url | replace: "index.html", "" }}</loc>
+    <lastmod>{{ post.date | default: site.time | date_to_xmlschema }}</lastmod>
   </url>
+    {% endif %}
+  {% endfor %}
 
+  {%- comment -%} 3) Collections（例如 _lifestyle、_random 等，只要 output: true） {%- endcomment -%}
+  {% for c in site.collections %}
+    {% if c.output %}
+      {% for doc in c.docs %}
+        {% if doc.sitemap != false %}
   <url>
-    <loc>{{ site.url }}/services/</loc>
-    <priority>0.8</priority>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>{{ base }}{{ doc.url | replace: "index.html", "" }}</loc>
+    <lastmod>{{ doc.date | default: site.time | date_to_xmlschema }}</lastmod>
   </url>
-  
-  {% if site.teaching %}
-  <url>
-    <loc>{{ site.url }}/teaching/</loc>
-    <priority>0.8</priority>
-    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    <changefreq>monthly</changefreq>
-  </url>
-  {% endif %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
 
 </urlset>
