@@ -19,15 +19,9 @@ permalink: /research/
     <li>
       Virtual Lab Tour of Kim Lab with Q&A
       <br><small>Oral Presentation by Zhu, Y., & Harriot, A. </small>
-      <br><small>Animal & Natural Resource Law Review (ANRLR) Symposium, East Lansing, MI. 2025</small>
+      <br><small><em>Animal & Natural Resource Law Review (ANRLR) Symposium</em>, East Lansing, MI. 2025</small>
     </li>
     
-    <li>
-    Advancing Validation Methodologies and Regulatory Acceptance of Microphysiological Systems
-    <br><small>Poster Presentation by Zhu, Y., & Locke, P.A.</small>
-    <br><small>EHE Research Retreat Poster Session, Baltimore, MD. 2025</small>
-    </li>
-
     <li>
     <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog45" target="_blank" rel="noopener">
     From Roadmap to Reality: Validating NAMs for FDA's Plan to Phase Out Animal Testing
@@ -45,31 +39,31 @@ permalink: /research/
     <li>
     Automated and Scalable Muscle Tissue System with Magnetic-based Functional Evaluation
     <br><small>Poster Presentation by Ren, Z., Kim, B., Go, G., Wang, H., Zhu, Y., Akarapipad, P., Loyola, A., Matsubara, T., Criscione, J., Lee, D., Herron, T., & Kim, D.</small>
-    <br><small>Biomedical Engineering Society 2024 Annual Meeting (BMES 2024), Baltimore, MD. 2024</small>
+    <br><small><em>Biomedical Engineering Society 2024 Annual Meeting (BMES 2024)</em>, Baltimore, MD. 2024</small>
     </li>
 
     <li>
     Advancing Validation Methodologies and Regulatory Acceptance of Microphysiological Systems
     <br><small>Oral Presentation by Zhu, Y., & Locke, P.A.</small>
-    <br><small>European Society for Alternatives to Animal Testing (EUSAAT 2024), Linz, Austria. 2024</small>
+    <br><small><em>European Society for Alternatives to Animal Testing (EUSAAT 2024)</em>, Linz, Austria. 2024</small>
     </li>
 
     <li>
     The Impact of U.S. FDA Modernization Act 2.0 on Animal Testing
     <br><small>Oral Presentation by Zhu, Y.</small>
-    <br><small>Personal Care and Homecare Ingredients (PCHi 2024), Shanghai, China (Virtual). 2024</small>
+    <br><small><em>Personal Care and Homecare Ingredients (PCHi 2024)</em>, Shanghai, China (Virtual). 2024</small>
     </li>
     
     <li>
     Advancing Validation Methodologies and Regulatory Acceptance of Microphysiological Systems
     <br><small>Poster Presentation by Zhu, Y., & Locke, P.A.</small>
-    <br><small>Microphysiological System World Summit 2024 (MPS WS 2024), Seattle, WA. 2024</small>
+    <br><small><em>Microphysiological System World Summit 2024 (MPS WS 2024)</em>, Seattle, WA. 2024</small>
     </li>
 
     <li>
     Recommendations for Promoting the Regulatory Acceptance of Microphysiological Systems
     <br><small>Oral Presentation by Zhu, Y., & Locke, P.A.</small>
-    <br><small>12th World Congress on Alternatives and Animal Use in the Life Sciences (WC12), Niagara Falls, Canada. 2023</small>
+    <br><small><em>12th World Congress on Alternatives and Animal Use in the Life Sciences (WC12)</em>, Niagara Falls, Canada. 2023</small>
     </li>
  
     <li>
@@ -106,25 +100,25 @@ permalink: /research/
     <li>
     Reducing Lung Cancer Risk from Radon Exposure: Radon Resistant New Construction as a Significant Public Health Tool
     <br><small>Oral Presentation by Locke, P.A., & Zhu, Y.</small>
-    <br><small>Canadian Nuclear Laboratories’ Low Dose Radiation Webinar Series, Virtual. 2024</small>
+    <br><small><em>Canadian Nuclear Laboratories’ Low Dose Radiation Webinar Series</em>, Virtual. 2024</small>
     </li>
 
     <li>
     Reducing Lung Cancer Risk from Radon Exposure in Manheim Township, PA: Radon Resistant New Construction (RRNC) as a Significant Public Health Tool
     <br><small>Oral Presentation by Zhu, Y., & Locke, P.A.</small>
-    <br><small>Indoor Environments 2023™, Nashville, TN. 2023</small>
+    <br><small><em>Indoor Environments 2023™</em>, Nashville, TN. 2023</small>
     </li>
 
     <li>
     RRNC Cost Effectiveness for Reducing Lung Cancer Risk
     <br><small>Oral Presentation by Zhu, Y.</small>
-    <br><small>CRCPD - National Radon Training Event, Virtual. 2021</small>
+    <br><small><em>CRCPD - National Radon Training Event</em>, Virtual. 2021</small>
     </li>
 
     <li>
     Lung Cancer Risk Reduction Associated with RRNC: A study of Manheim Township, PA
     <br><small>Presentation by Zhu, Y., & Locke, P.A.</small>
-    <br><small>Region 3 Mid-Atlantic Radon Stakeholder Meeting, Virtual. 2020</small>
+    <br><small><em>Region 3 Mid-Atlantic Radon Stakeholder Meeting</em>, Virtual. 2020</small>
     </li>
     
  </ul>
