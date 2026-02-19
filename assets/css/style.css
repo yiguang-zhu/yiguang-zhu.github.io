@@ -186,4 +186,42 @@ img{ max-width: 100%; height: auto; }
   font-weight: 500;
 }
 
+/* ===== Global: bullets tighter inside, keep spacing between bullets ===== */
+
+/* bullet 之间的间距 */
+ul li,
+ol li{
+  margin: 0 0 14px 0;   /* 想更松就 16-18；更紧就 10-12 */
+}
+
+/* bullet 内部的行距更紧 */
+ul li,
+ol li{
+  line-height: 1.35;
+}
+
+/* 关键：你全局的 p/ul 有 margin-bottom，会让 bullet 内部“很松”，这里压掉 */
+ul li p,
+ol li p{
+  margin: 0;
+}
+ul li p + p,
+ol li p + p{
+  margin-top: 4px;      /* 多段之间留一点点 */
+}
+
+/* 你的结构里大量用 <br><small>，把 small 变成块级，间距更好控 */
+ul li small,
+ol li small{
+  display: block;
+  margin-top: 3px;      /* small 行之间的间距 */
+  line-height: 1.25;
+  color: #6b6b6b;
+}
+
+/* 如果 small 里用了 <em>（期刊名），让它别拉高行距 */
+ul li small em,
+ol li small em{
+  line-height: 1.25;
+}
 
