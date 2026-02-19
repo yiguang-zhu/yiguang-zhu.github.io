@@ -190,8 +190,8 @@ img{ max-width: 100%; height: auto; }
 
 /* bullet 之间的间距 + 内部行距 */
 ul li, ol li{
-  margin: 0 0 14px;
-  line-height: 1.35;
+  margin: 0 0 15px;
+  line-height: 1;
 }
 
 /* bullet 内如果被 Markdown 包了一层 <p>，把它的默认大 margin 压掉 */
@@ -201,7 +201,7 @@ ul li p + p, ol li p + p{ margin-top: 4px; }
 /* 你用 <br><small> 的结构：small 用 inline，避免 block + <br> 叠加造成巨空白 */
 ul li small, ol li small{
   display: inline;
-  line-height: 1.25;
+  line-height: 1;
   color: #6b6b6b;
 }
 
