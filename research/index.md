@@ -2,6 +2,7 @@
 layout: default
 title: Research
 permalink: /research/
+avatar: /assets/avatar_research.JPG
 ---
 
 <details>
