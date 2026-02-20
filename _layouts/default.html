@@ -131,8 +131,11 @@
 
     <div class="wrapper">
       <header>
-        {% if site.avatar %}
-          <a class="image avatar"><img src="{{ site.avatar | relative_url }}" alt="avatar" /></a>
+        {% assign avatar_src = page.avatar | default: site.avatar %}
+        {% if avatar_src %}
+          <a class="image avatar">
+            <img src="{{ avatar_src | relative_url }}" alt="avatar" />
+          </a>
         {% endif %}
 
         <h1>{{ site.title }}</h1>
