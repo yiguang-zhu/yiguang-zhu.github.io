@@ -32,8 +32,8 @@ h3, h4, h5, h6{ font-weight: 600; color: #13294B; margin: 18px 0 10px; }
 
 p, ul, ol, table, pre, dl { margin: 0 0 18px; }
 
-a{ color: #39c; text-decoration: none; }
-a:hover{ color: #069; }
+a{ color: #FFAA33; text-decoration: none; }
+a:hover{ color: #d98f00; }
 
 strong{ color: #222; font-weight: 600; }
 small{ font-size: 12px; }
