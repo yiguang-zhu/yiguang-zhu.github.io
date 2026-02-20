@@ -27,6 +27,8 @@ resume_link: /assets/files/Resume_Feb_2026_Yiguang.pdf
 
 # Images 
 avatar: ./assets/img/avatar.jpg
+avatar_research: ./assets/img/avatar_research.jpg
+avatar_random: ./assets/img/avatar_random.jpg
 
 # Footnotes
 footnote: Powered by Jekyll and Minimal Light theme.
