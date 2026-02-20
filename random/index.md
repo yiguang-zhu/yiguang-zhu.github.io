@@ -2,6 +2,7 @@
 layout: default
 title: Random
 permalink: /random/
+avatar: /assets/avatar_random.jpg
 ---
 
 {% assign items = site.random | sort: "date" | reverse %}
