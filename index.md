@@ -1,6 +1,6 @@
 ---
 layout: default
-avatar: /assets/avatar.jpg
+avatar: /assets/img/avatar.jpg
 ---
 
 Yiguang is a PhD Candidate in the [Department of Environmental Health and Engineering](https://ehe.jhu.edu/) at Johns Hopkins University, working with [Dr. Paul Locke](https://publichealth.jhu.edu/faculty/430/paul-a-locke), and affiliated with the [JHU Toxicology Policy Program](https://www.jhutoxicologypolicyresearch.org/).
