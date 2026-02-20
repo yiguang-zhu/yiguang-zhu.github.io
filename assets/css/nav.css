@@ -115,3 +115,14 @@
     display: block;
   }
 }
+
+.topnav .brand{
+  color: var(--banner-text, #fff);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  height: var(--banner-h, 56px);
+  white-space: nowrap;
+}
