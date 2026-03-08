@@ -16,12 +16,6 @@ avatar: /assets/img/avatar_research.JPG
       <br><small>Kim, B., Choi, J. S., Zhu, Y., Kim, J., Kim, Y.S., Parra, A., Locke, P.A., Kim, J.H., Herron,T., & Kim, D.-H. </small>
       <br><small><em>Biosensors and Bioelectronics</em>, 2025</small>
     </li>
-
-    <li>
-      Virtual Lab Tour of Kim Lab with Q&A
-      <br><small>Oral Presentation by Zhu, Y., & Harriot, A. </small>
-      <br><small><em>Animal & Natural Resource Law Review (ANRLR) Symposium</em>, East Lansing, MI. 2025</small>
-    </li>
     
     <li>
     <a href="https://www.jhutoxicologypolicyresearch.org/tox-blog/blog45" target="_blank" rel="noopener">
