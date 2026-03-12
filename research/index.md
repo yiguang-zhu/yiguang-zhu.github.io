@@ -132,6 +132,15 @@ avatar: /assets/img/avatar_research.JPG
       <br><small>Ye, W., Xiong, D.,Yang, Z., Zhu, Y., Zhang, Q., Lin, W., Xu, C., Liu, X., Zhang, J., Yang, Y. </small>
       <br><small><em>Acta Ecologica Sinica</em>, 2019</small>
     </li>
+
+     <li>
+      <a href="assets/files/2026 zhu-et-al-bright-spot-closing-door-encouraging-innovation-restricting-foreign-talent.pdf" target="_blank" rel="noopener">
+      Bright Spot, Closing Door: Encouraging Innovation, Restricting Foreign Talent
+      </a>
+      <br><small>Zhu, Y., Latshaw, M.W., Locke, P.A. </small>
+      <br><small><em>American Journal of Public Health</em>, 2026</small>
+    </li>
+ 
  
   </ul>
 
