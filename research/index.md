@@ -134,7 +134,7 @@ avatar: /assets/img/avatar_research.JPG
     </li>
 
      <li>
-      <a href="assets/files/2026 zhu-et-al-bright-spot-closing-door-encouraging-innovation-restricting-foreign-talent.pdf" target="_blank" rel="noopener">
+      <a href="/assets/files/2026-zhu-et-al-bright-spot-closing-door-encouraging-innovation-restricting-foreign-talent.pdf" target="_blank" rel="noopener">
       Bright Spot, Closing Door: Encouraging Innovation, Restricting Foreign Talent
       </a>
       <br><small>Zhu, Y., Latshaw, M.W., Locke, P.A. </small>
