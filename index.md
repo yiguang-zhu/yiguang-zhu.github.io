@@ -1,15 +1,11 @@
 ---
-layout: default
-avatar: /assets/img/avatar.jpg
+layout: home
+nav: home
+title: Home
+seo_title: Yiguang Zhu, PhD | Environmental Health & Science Policy
+description: Yiguang Zhu (朱益广), PhD. Research in environmental health, new approach methodologies, microphysiological systems, and science policy.
 ---
 
-Yiguang is a PhD Candidate in the [Department of Environmental Health and Engineering](https://ehe.jhu.edu/) at Johns Hopkins University, working with [Dr. Paul Locke](https://publichealth.jhu.edu/faculty/430/paul-a-locke), and affiliated with the [JHU Toxicology Policy Program](https://www.jhutoxicologypolicyresearch.org/).
+I am an environmental health researcher interested in how scientific evidence informs policy and public health decisions. My work explores the validation, regulatory acceptance, and adoption of <span class="zc-highlight">new approach methodologies</span>, including microphysiological systems and organ-on-a-chip models.
 
-## Research interests
-My research focuses on the intersection of environmental health and science policy. I specialize in the regulatory validation, qualification, and standardization of <span class="highlight">New Approach Methodologies (NAMs)</span>, particularly in vitro testing methods like Microphysiological Systems and organ-on-a-chip models. Through comparative analysis of decision-making frameworks governing drugs, chemicals, and medical products, I aim to enhance <span class="highlight">evidence-based policymaking</span> and expedite the translation, adoption, and implementation of innovative testing methods.
-
-## Education
-ScM, Johns Hopkins Bloomberg School of Public Health, 2021
-<br />
-BS, Pennsylvania State University, 2019
-
+I earned my PhD in Environmental Health and Engineering from Johns Hopkins University in October 2026, where I worked with [Dr. Paul Locke](https://publichealth.jhu.edu/faculty/430/paul-a-locke). My research has also examined radon exposure and policies to reduce its public health impact.

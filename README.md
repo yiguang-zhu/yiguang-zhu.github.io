@@ -9,21 +9,30 @@ Source code for Yiguang Zhu’s personal website.
 ## Structure
 
 - `index.md` / `research/index.md` / `random/index.md`: Home, Research, and Random
-- `_layouts/` and `_includes/`: Jekyll layouts and components
+- `_layouts/` and `_includes/`: shared masthead, footer, Home and article layouts
+- `_data/profile.yml`: profile, contact details, PDF links and education
+- `_data/research.yml`: publications, perspectives and presentations
 - `_data/navigation.yml`: top navigation tabs
 - `_random/`: Random articles and recipes
-- `assets/`: CSS, JS, images, PDFs (CV/Resume), icons
+- `assets/css/site.css`: the shared responsive design
+- `assets/img/` and `assets/files/`: personal photos, icon and PDFs
 
 ## Updating on GitHub
 
-- Edit the main pages above to update their content.
-- Edit `_config.yml` for the profile details and links shared across the site.
+- **[中文更新说明](docs/在GitHub更新网站.md)** covers editing the profile, research, articles and PDFs directly in GitHub.
+- Edit `index.md` to update About me.
+- Edit `_data/profile.yml` for profile details and links shared across the site.
+- Edit `_data/research.yml` for research entries; `selected: true` also adds an entry to Home.
 - To add a Random entry, copy an existing file in `_random/`, give it a new filename, and update its title, date, category, and text. It will appear on the Random page automatically.
 - Keep the `---` sections at the top of content files; they contain page settings.
 
 ## Checks
 
 Pull requests automatically build the site with GitHub Pages' Jekyll builder and check that personal pages, local links, and the sitemap remain valid. Publishing continues through the repository's existing GitHub Pages settings.
+
+Successful checks save a complete `website-preview` artifact. The `preview-centered-rewrite` branch is a review preview; it is not a production deployment.
+
+All pages render as static HTML and work without JavaScript. The stylesheet is named `site.css` to avoid a filename collision with GitHub Pages' fallback theme stylesheet.
 
 ## Theme credit
 

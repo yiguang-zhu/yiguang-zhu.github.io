@@ -1,34 +1,9 @@
-# Basic Information 
 title: Yiguang Zhu
-chinese_name: 朱益广
-position: Ph.D. Candidate
-affiliation: Johns Hopkins University
-affiliation_link: https://www.zhuyg.com/
-email: yzhu99@jh.edu
 url: "https://zhuyg.com"
-banner_brand: "廣义上是益廣"
-
-# Search Engine Optimization (SEO)
-keywords: yiguang zhu, zhu yiguang, zhuyiguang, 朱益广
-canonical: https://zhuyg.com
-description: Ph.D. candidate in the Department of Environmental Health and Engineering at Johns Hopkins University. His research focuses on health policy and new approach methods like microphysiological systems.
-
-# Links
-link_type: icon #text/icon
-linkedin: https://www.linkedin.com/in/yiguangzhu/
-cv_link: /assets/files/CV_Feb_2026_Yiguang_Zhu.pdf
-resume_link: /assets/files/Resume_Feb_2026_Yiguang.pdf
-
-# Images 
-avatar: ./assets/img/avatar.jpg
-
-# The following files will be removed from the generated website.
-exclude:
-  - Gemfile
-  - Gemfile.lock
-  - README.md
-  - LICENSE
-  - CNAME
+baseurl: ""
+lang: en
+timezone: America/New_York
+description: Yiguang Zhu, PhD — environmental health, new approach methodologies, and science policy.
 
 collections:
   random:
@@ -38,7 +13,23 @@ collections:
 defaults:
   - scope:
       path: ""
-      type: random
     values:
       layout: default
+  - scope:
+      path: ""
+      type: random
+    values:
+      layout: article
+      lang: zh-CN
+      nav: random
       author: Yiguang Zhu
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - CNAME
+  - docs
+  - scripts
+  - vendor

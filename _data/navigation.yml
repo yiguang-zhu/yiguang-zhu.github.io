@@ -1,10 +1,10 @@
 main:
-  - title: "Home"
-    url: ./
-    right: true
-
-  - title: "Research"
-    url: research/
-
-  - title: "Random"
-    url: random/
+  - title: Home
+    url: /
+    key: home
+  - title: Research
+    url: /research/
+    key: research
+  - title: Random
+    url: /random/
+    key: random
