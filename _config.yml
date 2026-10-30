@@ -25,6 +25,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - assets/fonts/README.md
   - LICENSE
   - CNAME
   - docs

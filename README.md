@@ -16,6 +16,7 @@ Source code for Yiguang Zhu’s personal website.
 - `_data/translations.yml`: English and Chinese interface labels
 - `_random/`: Random articles and recipes
 - `assets/css/site.css`: the shared responsive design
+- `assets/fonts/`: self-hosted Source Serif 4 for all English text, Noto Serif SC for the Chinese masthead name, and licenses; Chinese body text retains the established Songti/SimSun serif stack
 - `assets/img/` and `assets/files/`: personal photos, icon and PDFs
 
 ## Updating on GitHub
