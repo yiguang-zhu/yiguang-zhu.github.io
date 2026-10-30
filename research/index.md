@@ -34,6 +34,7 @@ filters: true
     <h3 lang="en">{% if work.url %}<a href="{{ work.url }}" target="_blank" rel="noopener noreferrer">{{ work.title | escape }}</a>{% else %}{{ work.title | escape }}{% endif %}</h3>
     <p lang="en">{{ work.authors | escape }}</p>
     <p class="zc-meta" lang="en">{{ work.venue | escape }}</p>
+    {% if work.pdf %}<p class="zc-publication-links"><a href="{{ work.pdf | relative_url }}" target="_blank" rel="noopener noreferrer" type="application/pdf">{% include translate.html key='Full text PDF' %}<span class="zc-sr-only" lang="en">: {{ work.title | escape }}</span></a></p>{% endif %}
   </article>
   {% endfor %}
 </section>

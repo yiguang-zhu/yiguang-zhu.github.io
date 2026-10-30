@@ -66,9 +66,12 @@ category: 调酒
   venue: "期刊或会议名称"
   topic: "Science policy"
   url: "https://doi.org/实际链接"
+  pdf: "/assets/files/论文文件名.pdf"
 ```
 
 `type` 可选 `Publications`、`Perspectives`。`topic` 是研究主题，同名主题会自动归为一组，生成可点选的分类。研究条目统一显示在 Research 页面；首页只保留 About me 和 Education。没有公开链接时可删掉 `url`。
+
+`url` 决定点击标题后打开的论文网页；`pdf` 决定下面的 **Full text PDF** 链接。添加全文时，先进入 `assets/files`，点 **Add file → Upload files** 上传 PDF，再把对应路径填入 `pdf`。建议文件名用简短的英文字母、数字和短横线。没有 PDF 时删掉 `pdf` 这一行，不会出现空链接。
 
 ## 保存与发布
 
