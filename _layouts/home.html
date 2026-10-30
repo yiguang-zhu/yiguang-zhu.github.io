@@ -5,12 +5,9 @@ layout: default
 <div class="zc-intro">
   <aside class="zc-profile" aria-label="Profile">
     <img class="zc-portrait" src="{{ person.portrait | relative_url }}" width="154" height="154" alt="Yiguang Zhu">
-    <p class="zc-position">{{ person.degree }}</p>
-    <p class="zc-school">{{ person.field | escape }}</p>
     <a class="zc-email" href="mailto:{{ person.email }}">{{ person.email }}</a>
   </aside>
   <div class="zc-bio">
-    <p class="zc-eyebrow">ENVIRONMENTAL HEALTH &amp; SCIENCE POLICY</p>
     <h1>About me</h1>
     {{ content }}
     <div class="zc-profile-links">

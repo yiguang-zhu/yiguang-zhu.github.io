@@ -74,6 +74,12 @@ jobs:
           assert 'Ph.D. Candidate' not in home and 'PhD Candidate' not in home
           assert 'zhuyiguang15@gmail.com' in home
           assert 'From Random' not in home
+          assert 'class="zc-position"' not in home and 'class="zc-school"' not in home
+          assert 'Talks &amp; posters' not in research
+          assert 'https://doi.org/10.1002/cpt.70428' in research
+          assert 'data-filter-list="research"' in research
+          assert 'data-filter-list="random"' in (root / 'random/index.html').read_text(encoding='utf-8')
+          assert (root / 'assets/img/profile-oct-2026.png').is_file()
           expected_research = Path('_data/research.yml').read_text(encoding='utf-8').count('- title:')
           assert research.count('class="zc-publication"') == expected_research
           assert len(list((root / 'random').glob('*/index.html'))) == len(list(Path('_random').glob('*.md')))

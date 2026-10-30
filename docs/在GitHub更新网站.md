@@ -55,7 +55,7 @@ category: 调酒
   selected: true
 ```
 
-`type` 可选 `Publications`、`Perspectives`、`Talks & posters`。只有 `selected: true` 的条目会出现在首页；不想放首页就删掉这一行。没有公开链接的报告可删掉 `url`，同时不要标记 `selected`。
+`type` 可选 `Publications`、`Perspectives`。`topic` 是研究主题，同名主题会自动归为一组，生成可点选的分类。只有 `selected: true` 的条目会出现在首页；不想放首页就删掉这一行。没有公开链接时可删掉 `url`，同时不要标记 `selected`。
 
 ## 保存与发布
 

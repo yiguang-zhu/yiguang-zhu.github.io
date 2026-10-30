@@ -11,7 +11,7 @@ Source code for Yiguang Zhu’s personal website.
 - `index.md` / `research/index.md` / `random/index.md`: Home, Research, and Random
 - `_layouts/` and `_includes/`: shared masthead, footer, Home and article layouts
 - `_data/profile.yml`: profile, contact details, PDF links and education
-- `_data/research.yml`: publications, perspectives and presentations
+- `_data/research.yml`: publications and perspectives
 - `_data/navigation.yml`: top navigation tabs
 - `_random/`: Random articles and recipes
 - `assets/css/site.css`: the shared responsive design
@@ -32,7 +32,7 @@ Pull requests automatically build the site with GitHub Pages' Jekyll builder and
 
 Successful checks save a complete `website-preview` artifact. The `preview-centered-rewrite` branch is a review preview; it is not a production deployment.
 
-All pages render as static HTML and work without JavaScript. The stylesheet is named `site.css` to avoid a filename collision with GitHub Pages' fallback theme stylesheet.
+All content renders as static HTML. A small local script adds category filters on Research and Random; with JavaScript disabled all content remains readable. Filter options are derived from the content, so adding categories in GitHub needs no code changes. The stylesheet is named `site.css` to avoid a filename collision with GitHub Pages' fallback theme stylesheet.
 
 ## Theme credit
 

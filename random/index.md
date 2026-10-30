@@ -4,19 +4,26 @@ nav: random
 title: Random
 permalink: /random/
 description: 朱益广的随笔：好奇心、训诂、调酒，以及研究之外有意思的事。
+filters: true
 ---
 <div class="zc-page-heading">
-  <p class="zc-eyebrow" lang="zh-CN">好奇心 · 训诂 · 调酒</p>
   <h1>Random</h1>
-  <p lang="zh-CN">研究之外，随手记下一些有意思的事。</p>
 </div>
+<div data-filter-list="random">
+<div class="zc-filter-bar" role="group" aria-label="Random 分类" data-filter-controls hidden>
+  <button type="button" data-filter-key="category" data-filter-value="all" aria-pressed="true" lang="zh-CN">全部</button>
+  {% assign categories = site.random | map: 'category' | uniq | sort %}
+  {% for category in categories %}<button type="button" data-filter-key="category" data-filter-value="{{ category | escape }}" aria-pressed="false" lang="zh-CN">{{ category }}</button>{% endfor %}
+</div>
+<span class="zc-sr-only" role="status" data-filter-status></span>
 <div class="zc-random-list">
   {% assign entries = site.random | sort: 'date' | reverse %}
   {% for entry in entries %}
-  <a class="zc-random-item" href="{{ entry.url | relative_url }}">
+  <a class="zc-random-item" href="{{ entry.url | relative_url }}" data-filter-item data-category="{{ entry.category | escape }}">
     <time class="zc-year" datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%Y.%m.%d' }}</time>
-    <span><span class="zc-note-title" lang="zh-CN">{{ entry.title | escape }}</span><span class="zc-meta"><span lang="zh-CN">{{ entry.category }}</span>{% if entry.subtitle %} · {{ entry.subtitle }}{% endif %}</span></span>
+    <span><span class="zc-note-title"><span lang="zh-CN">{{ entry.title | escape }}</span>{% if entry.subtitle %}<span class="zc-name-divider" aria-hidden="true"> / </span><span lang="en">{{ entry.subtitle | escape }}</span>{% endif %}</span><span class="zc-meta" lang="zh-CN">{{ entry.category }}</span></span>
     <span class="zc-row-arrow" aria-hidden="true">→</span>
   </a>
   {% endfor %}
+</div>
 </div>
