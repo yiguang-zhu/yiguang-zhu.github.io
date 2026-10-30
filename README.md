@@ -22,7 +22,7 @@ Source code for Yiguang Zhu’s personal website.
 - **[中文更新说明](docs/在GitHub更新网站.md)** covers editing the profile, research, articles and PDFs directly in GitHub.
 - Edit `index.md` to update About me.
 - Edit `_data/profile.yml` for profile details and links shared across the site.
-- Edit `_data/research.yml` for research entries; `selected: true` also adds an entry to Home.
+- Edit `_data/research.yml` for research entries. Research is displayed on its own page; Home contains About me and Education.
 - To add a Random entry, copy an existing file in `_random/`, give it a new filename, and update its title, date, category, and text. It will appear on the Random page automatically.
 - Keep the `---` sections at the top of content files; they contain page settings.
 
@@ -37,3 +37,5 @@ All content renders as static HTML. A small local script adds category filters o
 ## Theme credit
 
 The site was originally adapted from [Minimal Light](https://github.com/yaoyao-liu/minimal-light). The original license is retained in `LICENSE`, and bundled third-party assets retain their license notices.
+
+LinkedIn and Instagram logos come from [Bootstrap Icons](https://github.com/twbs/icons), with their MIT license retained in `assets/icons/LICENSE`.

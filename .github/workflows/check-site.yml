@@ -74,6 +74,12 @@ jobs:
           assert 'Ph.D. Candidate' not in home and 'PhD Candidate' not in home
           assert 'zhuyiguang15@gmail.com' in home
           assert 'From Random' not in home
+          assert 'Selected research' not in home
+          assert 'class="zc-home-grid"' in home
+          assert 'aria-label="Personal links"' in home
+          assert 'https://www.instagram.com/zhuyiguang/' in home
+          for icon in ('linkedin.svg', 'instagram.svg'):
+              assert (root / 'assets/icons' / icon).is_file()
           assert 'class="zc-position"' not in home and 'class="zc-school"' not in home
           assert 'Talks &amp; posters' not in research
           assert 'https://doi.org/10.1002/cpt.70428' in research

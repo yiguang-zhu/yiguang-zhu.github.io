@@ -4,7 +4,7 @@ layout: default
 <a class="zc-text-action zc-back" href="{{ '/random/' | relative_url }}">← Random</a>
 <article class="zc-article">
   <p class="zc-eyebrow"><span lang="zh-CN">{{ page.category }}</span> · <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: '%Y.%m.%d' }}</time></p>
-  <h1><span lang="zh-CN">{{ page.title | escape }}</span>{% if page.subtitle %}<span class="zc-name-divider" aria-hidden="true"> / </span><span lang="en">{{ page.subtitle | escape }}</span>{% endif %}</h1>
+  <h1><span lang="zh-CN">{{ page.title | escape }}</span>{% if page.subtitle %}<span class="zc-name-divider" aria-hidden="true"> | </span><span lang="en">{{ page.subtitle | escape }}</span>{% endif %}</h1>
   <div class="zc-article-body">{{ content }}</div>
   <div class="zc-article-end"><a class="zc-text-action" href="{{ '/random/' | relative_url }}">← All Random</a></div>
 </article>

@@ -21,7 +21,7 @@ filters: true
   {% for entry in entries %}
   <a class="zc-random-item" href="{{ entry.url | relative_url }}" data-filter-item data-category="{{ entry.category | escape }}">
     <time class="zc-year" datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%Y.%m.%d' }}</time>
-    <span><span class="zc-note-title"><span lang="zh-CN">{{ entry.title | escape }}</span>{% if entry.subtitle %}<span class="zc-name-divider" aria-hidden="true"> / </span><span lang="en">{{ entry.subtitle | escape }}</span>{% endif %}</span><span class="zc-meta" lang="zh-CN">{{ entry.category }}</span></span>
+    <span><span class="zc-note-title"><span lang="zh-CN">{{ entry.title | escape }}</span>{% if entry.subtitle %}<span class="zc-name-divider" aria-hidden="true"> | </span><span lang="en">{{ entry.subtitle | escape }}</span>{% endif %}</span><span class="zc-meta" lang="zh-CN">{{ entry.category }}</span></span>
     <span class="zc-row-arrow" aria-hidden="true">→</span>
   </a>
   {% endfor %}

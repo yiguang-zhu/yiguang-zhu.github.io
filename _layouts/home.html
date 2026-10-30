@@ -2,33 +2,27 @@
 layout: default
 ---
 {% assign person = site.data.profile %}
-<div class="zc-intro">
-  <aside class="zc-profile" aria-label="Profile">
-    <img class="zc-portrait" src="{{ person.portrait | relative_url }}" width="154" height="154" alt="Yiguang Zhu">
-    <a class="zc-email" href="mailto:{{ person.email }}">{{ person.email }}</a>
-  </aside>
-  <div class="zc-bio">
-    <h1>About me</h1>
-    {{ content }}
-    <div class="zc-profile-links">
+<h1 class="zc-sr-only">{{ person.name }}</h1>
+<div class="zc-home-grid">
+  <aside class="zc-home-profile" aria-label="Profile and links">
+    <img class="zc-home-portrait" src="{{ person.portrait | relative_url }}" width="200" height="200" alt="Yiguang Zhu">
+    <a class="zc-home-email" href="mailto:{{ person.email }}">{{ person.email }}</a>
+    <nav class="zc-home-links" aria-label="Personal links">
       <a href="{{ person.cv | relative_url }}" target="_blank" rel="noopener noreferrer">CV <small class="zc-file-date">{{ person.documents_updated }}</small> <span aria-hidden="true">↗</span></a>
       <a href="{{ person.resume | relative_url }}" target="_blank" rel="noopener noreferrer">Resume <small class="zc-file-date">{{ person.documents_updated }}</small> <span aria-hidden="true">↗</span></a>
       <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-    </div>
+    </nav>
+  </aside>
+  <div class="zc-home-content">
+    <section aria-labelledby="about-me">
+      <h2 id="about-me" class="zc-home-subheading">About me</h2>
+      <div class="zc-bio">{{ content }}</div>
+    </section>
+    <section class="zc-home-education" aria-labelledby="education">
+      <h2 id="education" class="zc-home-subheading">Education</h2>
+      {% for item in person.education %}
+      <div class="zc-education-entry"><p>{{ item.degree }}, {{ item.institution }}</p><span>{{ item.year }}</span></div>
+      {% endfor %}
+    </section>
   </div>
 </div>
-<section class="zc-section" aria-labelledby="selected-research">
-  <div class="zc-section-heading"><h2 id="selected-research">Selected research</h2><a class="zc-text-action" href="{{ '/research/' | relative_url }}">View research <span aria-hidden="true">→</span></a></div>
-  {% assign selected = site.data.research | where: 'selected', true | sort: 'year' | reverse %}
-  {% for work in selected %}
-  <article class="zc-work-row">
-    <span class="zc-year">{{ work.year }}</span>
-    <div><a class="zc-work-title" href="{{ work.url }}" target="_blank" rel="noopener noreferrer">{{ work.short_title | default: work.title | escape }}</a><p class="zc-meta">{{ work.venue | escape }} · {{ work.topic }}</p></div>
-    <span class="zc-row-arrow" aria-hidden="true">↗</span>
-  </article>
-  {% endfor %}
-</section>
-<section class="zc-education" aria-labelledby="education">
-  <h2 id="education">Education</h2>
-  <div>{% for item in person.education %}<p>{{ item.degree }}, {{ item.institution }} <span>{{ item.year }}</span></p>{% endfor %}</div>
-</section>

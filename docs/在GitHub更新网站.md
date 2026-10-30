@@ -52,10 +52,9 @@ category: 调酒
   venue: "期刊或会议名称"
   topic: "Science policy"
   url: "https://doi.org/实际链接"
-  selected: true
 ```
 
-`type` 可选 `Publications`、`Perspectives`。`topic` 是研究主题，同名主题会自动归为一组，生成可点选的分类。只有 `selected: true` 的条目会出现在首页；不想放首页就删掉这一行。没有公开链接时可删掉 `url`，同时不要标记 `selected`。
+`type` 可选 `Publications`、`Perspectives`。`topic` 是研究主题，同名主题会自动归为一组，生成可点选的分类。研究条目统一显示在 Research 页面；首页只保留 About me 和 Education。没有公开链接时可删掉 `url`。
 
 ## 保存与发布
 
