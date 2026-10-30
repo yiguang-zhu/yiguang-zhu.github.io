@@ -26,6 +26,7 @@
   <meta name="theme-color" content="#FFAA33">
   <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  <script src="{{ '/assets/js/language.js' | relative_url }}" defer></script>
   {% if page.filters %}<script src="{{ '/assets/js/filters.js' | relative_url }}" defer></script>{% endif %}
   {% if page.nav == 'home' %}
   <script type="application/ld+json">
@@ -34,13 +35,15 @@
   {% endif %}
 </head>
 <body>
-  <div id="zg-site">
+  {% capture page_title_zh %}{% if page.seo_title_zh %}{{ page.seo_title_zh }}{% else %}{{ site.data.translations[page.title].zh | default: page.title }} | 朱益广{% endif %}{% endcapture %}
+  <div id="zg-site" data-title-en="{{ page_title | strip | escape }}" data-title-zh="{{ page_title_zh | strip | escape }}">
     <div class="zc-site">
-      <a class="zc-skip" href="#main">Skip to content</a>
+      <a class="zc-skip" href="#main">{% include translate.html key='Skip to content' %}</a>
       {% include header.html %}
       <main id="main" class="zc-main">{{ content }}</main>
       {% include footer.html %}
     </div>
+    <script type="application/json" data-language-dictionary>{{ site.data.translations | jsonify }}</script>
   </div>
 </body>
 </html>

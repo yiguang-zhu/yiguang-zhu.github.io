@@ -7,7 +7,7 @@ sitemap: false
 ---
 <div class="zc-page-heading">
   <p class="zc-eyebrow">404</p>
-  <h1>Page not found.</h1>
-  <p>This page may have moved. You can find my work in Research, or explore the writing in Random.</p>
+  <h1>{% include translate.html key='Page not found' %}</h1>
+  <p>{% include translate.html key='Missing page message' %}</p>
 </div>
-<div class="zc-jump-links"><a href="/">Home →</a><a href="/research/">Research →</a><a href="/random/">Random →</a></div>
+<div class="zc-jump-links"><a href="/">{% include translate.html key='Home' %} →</a><a href="/research/">{% include translate.html key='Research' %} →</a><a href="/random/">Random →</a></div>

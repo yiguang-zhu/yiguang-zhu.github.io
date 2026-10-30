@@ -1,8 +1,13 @@
 <header class="zc-header">
-  <a class="zc-brand" href="{{ '/' | relative_url }}" aria-label="Yiguang Zhu — Home"><span>{{ site.data.profile.name }}</span><span class="zc-cn-name" lang="zh-CN">{{ site.data.profile.chinese_name }}</span></a>
+  <div class="zc-header-row">
+  <a class="zc-brand" href="{{ '/' | relative_url }}" aria-label="Yiguang Zhu — Home"><span lang="en">{{ site.data.profile.name }}</span><span class="zc-cn-name" lang="zh-CN">{{ site.data.profile.chinese_name }}</span></a>
+  <div class="zc-header-tools">
   <nav class="zc-nav" aria-label="Main navigation">
     {% for item in site.data.navigation.main %}
-    <a href="{{ item.url | relative_url }}"{% if page.nav == item.key %} aria-current="page"{% endif %}>{{ item.title }}</a>
+    <a href="{{ item.url | relative_url }}"{% if page.nav == item.key %} aria-current="page"{% endif %}>{% include translate.html key=item.title %}</a>
     {% endfor %}
   </nav>
+  <button class="zc-language-toggle" type="button" data-language-toggle aria-label="切换为中文" lang="zh-CN" hidden>中文</button>
+  </div>
+  </div>
 </header>

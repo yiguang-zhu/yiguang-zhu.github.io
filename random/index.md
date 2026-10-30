@@ -11,9 +11,9 @@ filters: true
 </div>
 <div data-filter-list="random">
 <div class="zc-filter-bar" role="group" aria-label="Random 分类" data-filter-controls hidden>
-  <button type="button" data-filter-key="category" data-filter-value="all" aria-pressed="true" lang="zh-CN">全部</button>
+  <button type="button" data-filter-key="category" data-filter-value="all" aria-pressed="true">{% include translate.html key='All' %}</button>
   {% assign categories = site.random | map: 'category' | uniq | sort %}
-  {% for category in categories %}<button type="button" data-filter-key="category" data-filter-value="{{ category | escape }}" aria-pressed="false" lang="zh-CN">{{ category }}</button>{% endfor %}
+  {% for category in categories %}<button type="button" data-filter-key="category" data-filter-value="{{ category | escape }}" aria-pressed="false">{% include translate.html key=category %}</button>{% endfor %}
 </div>
 <span class="zc-sr-only" role="status" data-filter-status></span>
 <div class="zc-random-list">
@@ -21,7 +21,7 @@ filters: true
   {% for entry in entries %}
   <a class="zc-random-item" href="{{ entry.url | relative_url }}" data-filter-item data-category="{{ entry.category | escape }}">
     <time class="zc-year" datetime="{{ entry.date | date: '%Y-%m-%d' }}">{{ entry.date | date: '%Y.%m.%d' }}</time>
-    <span><span class="zc-note-title"><span lang="zh-CN">{{ entry.title | escape }}</span>{% if entry.subtitle %}<span class="zc-name-divider" aria-hidden="true"> | </span><span lang="en">{{ entry.subtitle | escape }}</span>{% endif %}</span><span class="zc-meta" lang="zh-CN">{{ entry.category }}</span></span>
+    <span><span class="zc-note-title"><span lang="zh-CN">{{ entry.title | escape }}</span>{% if entry.subtitle %}<span class="zc-name-divider" aria-hidden="true"> | </span><span lang="en">{{ entry.subtitle | escape }}</span>{% endif %}</span><span class="zc-meta">{% include translate.html key=entry.category %}</span></span>
     <span class="zc-row-arrow" aria-hidden="true">→</span>
   </a>
   {% endfor %}

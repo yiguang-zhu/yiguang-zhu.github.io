@@ -29,7 +29,10 @@ function initializeZhuygFilters(scope, saved = {}) {
       const empty = container.querySelector('[data-filter-empty]');
       if (empty) empty.hidden = count !== 0;
       const status = container.querySelector('[data-filter-status]');
-      if (announce && status) status.textContent = container.dataset.filterList === 'random' ? `显示 ${count} 篇文章` : `${count} entries shown`;
+      if (announce && status) {
+        const languageRoot = container.closest('[data-language]');
+        status.textContent = languageRoot && languageRoot.dataset.language === 'zh' ? `显示 ${count} 项内容` : `${count} entries shown`;
+      }
     }
     container.querySelectorAll('[data-filter-controls]').forEach(group => { group.hidden = false; });
     container.addEventListener('click', event => {
@@ -39,6 +42,7 @@ function initializeZhuygFilters(scope, saved = {}) {
       render(true);
       container.dispatchEvent(new CustomEvent('zhuyg:filter-change', { bubbles: true, detail: { list: container.dataset.filterList, selected: { ...selected } } }));
     });
+    container.addEventListener('zhuyg:filter-language', () => render(true));
     render(false);
   }
   scope.querySelectorAll('[data-filter-list]').forEach(setup);

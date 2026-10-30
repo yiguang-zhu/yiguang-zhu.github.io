@@ -13,6 +13,7 @@ Source code for Yiguang Zhu’s personal website.
 - `_data/profile.yml`: profile, contact details, PDF links and education
 - `_data/research.yml`: publications and perspectives
 - `_data/navigation.yml`: top navigation tabs
+- `_data/translations.yml`: English and Chinese interface labels
 - `_random/`: Random articles and recipes
 - `assets/css/site.css`: the shared responsive design
 - `assets/img/` and `assets/files/`: personal photos, icon and PDFs
@@ -20,7 +21,7 @@ Source code for Yiguang Zhu’s personal website.
 ## Updating on GitHub
 
 - **[中文更新说明](docs/在GitHub更新网站.md)** covers editing the profile, research, articles and PDFs directly in GitHub.
-- Edit `index.md` to update About me.
+- Edit `index.md` to update About me: English in the body, Chinese in the `about_zh` field.
 - Edit `_data/profile.yml` for profile details and links shared across the site.
 - Edit `_data/research.yml` for research entries. Research is displayed on its own page; Home contains About me and Education.
 - To add a Random entry, copy an existing file in `_random/`, give it a new filename, and update its title, date, category, and text. It will appear on the Random page automatically.
@@ -33,6 +34,8 @@ Pull requests automatically build the site with GitHub Pages' Jekyll builder and
 Successful checks save a complete `website-preview` artifact. The `preview-centered-rewrite` branch is a review preview; it is not a production deployment.
 
 All content renders as static HTML. A small local script adds category filters on Research and Random; with JavaScript disabled all content remains readable. Filter options are derived from the content, so adding categories in GitHub needs no code changes. The stylesheet is named `site.css` to avoid a filename collision with GitHub Pages' fallback theme stylesheet.
+
+The Chinese/English switch translates interface text and Home content, remembers the preference locally, and preserves the existing page URLs. Publication titles and Random article bodies retain their original languages. Without JavaScript, the English interface remains available. Desktop navigation is one row; narrow screens retain a stacked header.
 
 ## Theme credit
 

@@ -1,0 +1,1 @@
+{%- assign translation = site.data.translations[include.key] -%}<span data-i18n="{{ include.key | escape }}" lang="en">{{ translation.en | default: include.key | escape }}</span>{{- '' -}}
