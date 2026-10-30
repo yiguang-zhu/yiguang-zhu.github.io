@@ -45,6 +45,7 @@ jobs:
               return root / (path.lstrip('/') + ('index.html' if path.endswith('/') else ''))
 
           pages = list(root.rglob('*.html'))
+          assert not list((root / 'assets').rglob('*.html')), 'Asset documentation must not become public pages'
           for page in pages:
               text = page.read_text(encoding='utf-8')
               for leftover in ('Yaoyao Liu', 'yaoyaoliu', 'assets/Illinois', 'Qi2PSmEAAAAJ', '{{', '{%'):
