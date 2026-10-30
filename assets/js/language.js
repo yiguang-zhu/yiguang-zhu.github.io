@@ -17,7 +17,7 @@ function initializeZhuygLanguage(root, options = {}) {
       const entry = dictionary[element.dataset.i18n];
       if (!entry) return;
       element.textContent = entry[language] || entry.en;
-      element.lang = language === 'zh' ? 'zh-CN' : 'en';
+      element.lang = entry[language + '_lang'] || (language === 'zh' ? 'zh-CN' : 'en');
     });
     root.querySelectorAll('[data-content-language]').forEach(element => {
       element.hidden = element.dataset.contentLanguage !== language;

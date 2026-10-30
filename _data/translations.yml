@@ -23,8 +23,8 @@ New approach methodologies: { en: New approach methodologies, zh: 新方法学 }
 Science policy: { en: Science policy, zh: 科技政策 }
 Radon: { en: Radon, zh: 氡 }
 Environmental science: { en: Environmental science, zh: 环境科学 }
-好奇心: { en: Curiosity, zh: 好奇心 }
-训诂: { en: Words & origins, zh: 训诂 }
+好奇心: { en: 好奇心, en_lang: zh-CN, zh: 好奇心 }
+训诂: { en: 训诂, en_lang: zh-CN, zh: 训诂 }
 调酒: { en: Cocktails, zh: 调酒 }
 Back to Random: { en: ← Random, zh: ← Random }
 All Random: { en: ← All Random, zh: ← 全部 Random }
