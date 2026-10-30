@@ -5,9 +5,9 @@ layout: default
 <h1 class="zc-sr-only">{{ person.name }}</h1>
 <div class="zc-home-grid">
   <aside class="zc-home-profile" aria-label="Profile and links">
-    <img class="zc-home-portrait" src="{{ person.portrait | relative_url }}" width="200" height="200" alt="Yiguang Zhu">
-    <a class="zc-home-email" href="mailto:{{ person.email }}">{{ person.email }}</a>
+    <img class="zc-home-portrait" src="{{ person.portrait | relative_url }}" width="176" height="176" alt="Yiguang Zhu">
     <nav class="zc-home-links" aria-label="Personal links">
+      <a class="zc-home-email" href="mailto:{{ person.email }}">{{ person.email }}</a>
       <a href="{{ person.cv | relative_url }}" target="_blank" rel="noopener noreferrer">CV <small class="zc-file-date">{{ person.documents_updated }}</small> <span aria-hidden="true">↗</span></a>
       <a href="{{ person.resume | relative_url }}" target="_blank" rel="noopener noreferrer">Resume <small class="zc-file-date">{{ person.documents_updated }}</small> <span aria-hidden="true">↗</span></a>
       <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
