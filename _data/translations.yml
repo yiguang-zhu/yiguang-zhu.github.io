@@ -1,0 +1,36 @@
+# 界面译文；英文原始论文标题和 Random 正文不在这里翻译。
+Home: { en: Home, zh: 首页 }
+Research: { en: Research, zh: 研究 }
+Random: { en: Random, zh: Random }
+About me: { en: About me, zh: 关于我 }
+Education: { en: Education, zh: 教育经历 }
+Education separator: { en: ", ", zh: "，" }
+CV: { en: CV, zh: 学术简历 }
+Resume: { en: Resume, zh: 简历 }
+Feb 2026: { en: Feb 2026, zh: 2026年2月 }
+PhD: { en: PhD, zh: 博士 }
+ScM: { en: ScM, zh: 理学硕士 }
+BS: { en: BS, zh: 理学学士 }
+Johns Hopkins University: { en: Johns Hopkins University, zh: 约翰斯·霍普金斯大学 }
+Johns Hopkins Bloomberg School of Public Health: { en: Johns Hopkins Bloomberg School of Public Health, zh: 约翰斯·霍普金斯大学彭博公共卫生学院 }
+Pennsylvania State University: { en: Pennsylvania State University, zh: 宾夕法尼亚州立大学 }
+All: { en: All, zh: 全部 }
+Publications: { en: Publications, zh: 论文 }
+Perspectives: { en: Perspectives, zh: 观点文章 }
+All topics: { en: All topics, zh: 全部主题 }
+NAMs: { en: NAMs, zh: 新方法学 }
+New approach methodologies: { en: New approach methodologies, zh: 新方法学 }
+Science policy: { en: Science policy, zh: 科技政策 }
+Radon: { en: Radon, zh: 氡 }
+Environmental science: { en: Environmental science, zh: 环境科学 }
+好奇心: { en: Curiosity, zh: 好奇心 }
+训诂: { en: Words & origins, zh: 训诂 }
+调酒: { en: Cocktails, zh: 调酒 }
+Back to Random: { en: ← Random, zh: ← Random }
+All Random: { en: ← All Random, zh: ← 全部 Random }
+No entries: { en: No entries in this group., zh: 这个分类暂无内容。 }
+Skip to content: { en: Skip to content, zh: 跳到正文 }
+Page not found: { en: Page not found, zh: 未找到页面 }
+Missing page message:
+  en: This page may have moved. You can find my work in Research, or explore the writing in Random.
+  zh: 这个页面可能已移动。你可以前往「研究」查看我的工作，或到 Random 阅读其他内容。

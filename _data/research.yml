@@ -1,0 +1,73 @@
+# 复制一组即可添加研究内容。类型和主题会自动加入 Research 的分类。
+
+- title: "Bright Spot, Closing Door: Encouraging Innovation, Restricting Foreign Talent"
+  year: 2026
+  type: "Publications"
+  authors: "Zhu, Y., Latshaw, M.W., Locke, P.A."
+  venue: "American Journal of Public Health"
+  topic: "Science policy"
+  url: "/assets/files/2026-zhu-et-al-bright-spot-closing-door-encouraging-innovation-restricting-foreign-talent.pdf"
+
+- title: "From application-first to science-first: A two-phase validation framework for complex in vitro NAMs"
+  year: 2026
+  type: "Publications"
+  authors: "Zhu, Y., & Locke, P. A."
+  venue: "Clinical Pharmacology & Therapeutics"
+  topic: "New approach methodologies"
+  url: "https://doi.org/10.1002/cpt.70428"
+
+- title: "Effect of Electrochemical Topology on Detection Sensitivity in MEA Assay for Drug-Induced Cardiotoxicity Screening"
+  year: 2025
+  type: "Publications"
+  authors: "Kim, B., Choi, J. S., Zhu, Y., Kim, J., Kim, Y.S., Parra, A., Locke, P.A., Kim, J.H., Herron,T., & Kim, D.-H."
+  venue: "Biosensors and Bioelectronics"
+  topic: "New approach methodologies"
+  url: "https://doi.org/10.1016/j.bios.2024.117082"
+
+- title: "From Roadmap to Reality: Validating NAMs for FDA's Plan to Phase Out Animal Testing"
+  year: 2025
+  type: "Perspectives"
+  authors: "Yiguang Zhu"
+  venue: "Tox Blog"
+  topic: "New approach methodologies"
+  url: "https://www.jhutoxicologypolicyresearch.org/tox-blog/blog45"
+
+- title: "Reducing Lung Cancer Risk from Radon Exposure in Manheim Township, PA: Radon Resistant New Construction (RRNC) as a Significant Public Health Tool"
+  year: 2025
+  type: "Publications"
+  authors: "Zhu, Y.; Fox, M.; Corrigan, B.; Locke, P.A."
+  venue: "International Journal of Radiation Biology"
+  topic: "Radon"
+  url: "https://doi.org/10.1080/09553002.2025.2588394"
+
+- title: "Regulation Updates in China"
+  year: 2024
+  type: "Perspectives"
+  authors: "Yiguang Zhu"
+  venue: "Tox Blog"
+  topic: "New approach methodologies"
+  url: "https://www.jhutoxicologypolicyresearch.org/tox-blog/blog28"
+
+- title: "Reimagining Legacy Animal Data Through the Lens of AI"
+  year: 2023
+  type: "Perspectives"
+  authors: "Yiguang Zhu"
+  venue: "Tox Blog"
+  topic: "New approach methodologies"
+  url: "https://www.jhutoxicologypolicyresearch.org/tox-blog/blog8"
+
+- title: "ARPA-H: A Catalyst for Advancing Microphysiological Systems"
+  year: 2023
+  type: "Perspectives"
+  authors: "Yiguang Zhu"
+  venue: "Tox Blog"
+  topic: "New approach methodologies"
+  url: "https://www.jhutoxicologypolicyresearch.org/tox-blog/blog4"
+
+- title: "Effect Of Soil Warming on Growth and Photosynthetic Characteristics of Cunninghamia Lanceolata Saplings"
+  year: 2019
+  type: "Publications"
+  authors: "Ye, W., Xiong, D.,Yang, Z., Zhu, Y., Zhang, Q., Lin, W., Xu, C., Liu, X., Zhang, J., Yang, Y."
+  venue: "Acta Ecologica Sinica"
+  topic: "Environmental science"
+  url: "https://doi.org/10.5846/stxb201801150110"

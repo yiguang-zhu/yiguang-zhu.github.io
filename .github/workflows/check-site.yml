@@ -69,4 +69,41 @@ jobs:
           for url in urls:
               assert local_file(url).suffix == '.html', f'Non-page in sitemap: {url}'
           assert 'noindex, follow' in (root / '404.html').read_text(encoding='utf-8')
+          home = (root / 'index.html').read_text(encoding='utf-8')
+          research = (root / 'research/index.html').read_text(encoding='utf-8')
+          assert 'Ph.D. Candidate' not in home and 'PhD Candidate' not in home
+          assert 'zhuyiguang15@gmail.com' in home
+          assert 'From Random' not in home
+          assert 'Selected research' not in home
+          assert 'class="zc-home-grid"' in home
+          assert 'aria-label="Personal links"' in home
+          assert 'https://www.instagram.com/zhuyiguang/' in home
+          for icon in ('linkedin.svg', 'instagram.svg'):
+              assert (root / 'assets/icons' / icon).is_file()
+          assert 'class="zc-position"' not in home and 'class="zc-school"' not in home
+          assert 'Talks &amp; posters' not in research
+          assert 'https://doi.org/10.1002/cpt.70428' in research
+          assert 'data-filter-list="research"' in research
+          assert 'data-filter-list="random"' in (root / 'random/index.html').read_text(encoding='utf-8')
+          assert (root / 'assets/img/profile-oct-2026.png').is_file()
+          expected_research = Path('_data/research.yml').read_text(encoding='utf-8').count('- title:')
+          assert research.count('class="zc-publication"') == expected_research
+          assert len(list((root / 'random').glob('*/index.html'))) == len(list(Path('_random').glob('*.md')))
+          import json, re
+          person = json.loads(re.search(r'<script type="application/ld\+json">(.*?)</script>', home, re.S).group(1))
+          assert person['mainEntity']['name'] == 'Yiguang Zhu'
+          titles = set()
+          for page in pages:
+              html = page.read_text(encoding='utf-8')
+              title = re.search(r'<title>(.*?)</title>', html).group(1)
+              assert title not in titles, f'Duplicate page title: {title}'
+              titles.add(title)
+              assert '/assets/css/site.css' in html
+              assert re.search(r'<link rel="canonical" href="https://zhuyg.com/', html)
           print(f'Checked {len(pages)} HTML pages, their local links, and {len(urls)} sitemap entries.')
+      - name: Save complete preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: website-preview
+          path: _site/
+          retention-days: 14

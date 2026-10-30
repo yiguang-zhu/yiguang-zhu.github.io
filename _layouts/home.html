@@ -1,0 +1,29 @@
+---
+layout: default
+---
+{% assign person = site.data.profile %}
+<h1 class="zc-sr-only">{{ person.name }}</h1>
+<div class="zc-home-grid">
+  <aside class="zc-home-profile" aria-label="Profile and links">
+    <img class="zc-home-portrait" src="{{ person.portrait | relative_url }}" width="176" height="176" alt="Yiguang Zhu">
+    <nav class="zc-home-links" aria-label="Personal links">
+      <a class="zc-home-email" href="mailto:{{ person.email }}">{{ person.email }}</a>
+      <a href="{{ person.cv | relative_url }}" target="_blank" rel="noopener noreferrer">{% include translate.html key='CV' %} <small class="zc-file-date">{% include translate.html key=person.documents_updated %}</small> <span aria-hidden="true">↗</span></a>
+      <a href="{{ person.resume | relative_url }}" target="_blank" rel="noopener noreferrer">{% include translate.html key='Resume' %} <small class="zc-file-date">{% include translate.html key=person.documents_updated %}</small> <span aria-hidden="true">↗</span></a>
+      <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+    </nav>
+  </aside>
+  <div class="zc-home-content">
+    <section aria-labelledby="about-me">
+      <h2 id="about-me" class="zc-home-subheading">{% include translate.html key='About me' %}</h2>
+      <div class="zc-bio" data-content-language="en" lang="en">{{ content }}</div>
+      <div class="zc-bio" data-content-language="zh" lang="zh-CN" hidden>{{ page.about_zh | markdownify }}</div>
+    </section>
+    <section class="zc-home-education" aria-labelledby="education">
+      <h2 id="education" class="zc-home-subheading">{% include translate.html key='Education' %}</h2>
+      {% for item in person.education %}
+      <div class="zc-education-entry"><p>{% include translate.html key=item.degree %}{% include translate.html key='Education separator' %}{% include translate.html key=item.institution %}</p><span>{{ item.year }}</span></div>
+      {% endfor %}
+    </section>
+  </div>
+</div>
