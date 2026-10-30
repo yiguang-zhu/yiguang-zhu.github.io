@@ -146,7 +146,8 @@ body { margin:0; background:light-dark(#fffdfa,#22201d); }
 #zg-site .zc-education-entry { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:16px; margin-top:12px; }
 #zg-site .zc-education-entry p { font-size:14px; line-height:1.7; }
 #zg-site .zc-education-entry>span { padding-top:3px; color:var(--zc-muted); font:400 12px/1.7 "Segoe UI",Arial,sans-serif; }
-#zg-site .zc-social-icon { display:block; width:19px; height:19px; background:currentColor; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat; -webkit-mask-position:center; mask-position:center; -webkit-mask-size:contain; mask-size:contain; }
+#zg-site .zc-social-icon { display:block; width:19px; height:19px; opacity:.7; background:currentColor; -webkit-mask-repeat:no-repeat; mask-repeat:no-repeat; -webkit-mask-position:center; mask-position:center; -webkit-mask-size:contain; mask-size:contain; }
+#zg-site .zc-footer-contact a:is(:hover,:focus-visible) .zc-social-icon { opacity:1; }
 #zg-site .zc-icon-linkedin { -webkit-mask-image:url('/assets/icons/linkedin.svg'); mask-image:url('/assets/icons/linkedin.svg'); }
 #zg-site .zc-icon-instagram { -webkit-mask-image:url('/assets/icons/instagram.svg'); mask-image:url('/assets/icons/instagram.svg'); }
 #zg-site .zc-footer-contact a { width:44px; flex:0 0 44px; justify-content:flex-end; color:var(--zc-orange); }

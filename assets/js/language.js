@@ -2,8 +2,9 @@ function initializeZhuygLanguage(root, options = {}) {
   if (!root) return null;
   const data = root.querySelector('[data-language-dictionary]');
   const dictionary = data ? JSON.parse(data.textContent) : {};
-  const persist = options.persist !== false;
-  let language = options.initialLanguage;
+  const switchEnabled = Boolean(root.querySelector('[data-language-toggle]'));
+  const persist = switchEnabled && options.persist !== false;
+  let language = switchEnabled ? options.initialLanguage : 'en';
   if (!language && persist) {
     try { language = localStorage.getItem('zhuyg-language'); } catch (_) { /* Storage may be unavailable. */ }
   }
@@ -38,7 +39,7 @@ function initializeZhuygLanguage(root, options = {}) {
   }
 
   function setLanguage(next, remember = true) {
-    language = next === 'zh' ? 'zh' : 'en';
+    language = switchEnabled && next === 'zh' ? 'zh' : 'en';
     refresh();
     if (remember && persist) {
       try { localStorage.setItem('zhuyg-language', language); } catch (_) { /* The toggle still works without storage. */ }

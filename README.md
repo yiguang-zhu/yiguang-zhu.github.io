@@ -31,11 +31,11 @@ Source code for Yiguang Zhu’s personal website.
 
 Pull requests automatically build the site with GitHub Pages' Jekyll builder and check that personal pages, local links, and the sitemap remain valid. Publishing continues through the repository's existing GitHub Pages settings.
 
-Successful checks save a complete `website-preview` artifact. The `preview-centered-rewrite` branch is a review preview; it is not a production deployment.
+Successful checks save a complete `website-preview` artifact. Changes merged into `main` are published through the existing GitHub Pages configuration.
 
 All content renders as static HTML. A small local script adds category filters on Research and Random; with JavaScript disabled all content remains readable. Filter options are derived from the content, so adding categories in GitHub needs no code changes. The stylesheet is named `site.css` to avoid a filename collision with GitHub Pages' fallback theme stylesheet.
 
-The Chinese/English switch translates interface text and Home content, remembers the preference locally, and preserves the existing page URLs. Publication titles and Random article bodies retain their original languages. Without JavaScript, the English interface remains available. Desktop navigation is one row; narrow screens retain a stacked header.
+The Chinese/English switch is temporarily disabled via `language_switcher: false` in `_config.yml`; the interface stays in English even if an earlier language preference was saved. Translation drafts remain in the source for future use. Publication titles and Random article bodies retain their original languages. Desktop navigation is one row; narrow screens retain a stacked header.
 
 ## Theme credit
 

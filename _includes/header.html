@@ -7,7 +7,7 @@
     <a href="{{ item.url | relative_url }}"{% if page.nav == item.key %} aria-current="page"{% endif %}>{% include translate.html key=item.title %}</a>
     {% endfor %}
   </nav>
-  <button class="zc-language-toggle" type="button" data-language-toggle aria-label="切换为中文" lang="zh-CN" hidden>中文</button>
+  {% if site.language_switcher %}<button class="zc-language-toggle" type="button" data-language-toggle aria-label="切换为中文" lang="zh-CN" hidden>中文</button>{% endif %}
   </div>
   </div>
 </header>
