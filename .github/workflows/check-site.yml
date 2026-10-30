@@ -59,7 +59,7 @@ jobs:
                   assert local_file(url.geturl()).is_file(), f'Broken local link in {page}: {value}'
 
           tree = ET.parse(root / 'sitemap.xml')
-          urls = [item.text for item in tree.findall('.//{*}loc')]
+          urls = [unquote(item.text) for item in tree.findall('.//{*}loc')]
           assert len(urls) == len(set(urls)), 'Duplicate sitemap URLs'
           expected = {
               'https://zhuyg.com/' + p.relative_to(root).as_posix().removesuffix('index.html')
