@@ -1,0 +1,72 @@
+name: Check website
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - name: Build with GitHub Pages
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+      - name: Check pages, links, and sitemap
+        shell: python
+        run: |
+          from html.parser import HTMLParser
+          from pathlib import Path
+          from urllib.parse import unquote, urljoin, urlsplit
+          import xml.etree.ElementTree as ET
+
+          root = Path('_site')
+          for path in ('index.html', 'research/index.html', 'random/index.html', '404.html'):
+              assert (root / path).is_file(), f'Missing page: {path}'
+          for path in ('html_source_file', 'google_scholar_crawler', 'jekyll.yml'):
+              assert not (root / path).exists(), f'Unnecessary files published: {path}'
+
+          class Links(HTMLParser):
+              def __init__(self):
+                  super().__init__()
+                  self.urls = []
+              def handle_starttag(self, tag, attrs):
+                  for key, value in attrs:
+                      if key in ('href', 'src') and value:
+                          self.urls.append(value)
+
+          def local_file(url):
+              path = unquote(urlsplit(url).path)
+              return root / (path.lstrip('/') + ('index.html' if path.endswith('/') else ''))
+
+          pages = list(root.rglob('*.html'))
+          for page in pages:
+              text = page.read_text(encoding='utf-8')
+              for leftover in ('Yaoyao Liu', 'yaoyaoliu', 'assets/Illinois', 'Qi2PSmEAAAAJ', '{{', '{%'):
+                  assert leftover not in text, f'Unresolved or template content in {page}: {leftover}'
+              parser = Links()
+              parser.feed(text)
+              page_url = 'https://zhuyg.com/' + page.relative_to(root).as_posix()
+              for value in parser.urls:
+                  url = urlsplit(urljoin(page_url, value))
+                  if url.scheme not in ('http', 'https') or url.netloc != 'zhuyg.com':
+                      continue
+                  assert local_file(url.geturl()).is_file(), f'Broken local link in {page}: {value}'
+
+          tree = ET.parse(root / 'sitemap.xml')
+          urls = [item.text for item in tree.findall('.//{*}loc')]
+          assert len(urls) == len(set(urls)), 'Duplicate sitemap URLs'
+          expected = {
+              'https://zhuyg.com/' + p.relative_to(root).as_posix().removesuffix('index.html')
+              for p in pages if p.name != '404.html'
+          }
+          assert set(urls) == expected, f'Sitemap differs from published pages: {set(urls) ^ expected}'
+          for url in urls:
+              assert local_file(url).suffix == '.html', f'Non-page in sitemap: {url}'
+          assert 'noindex, follow' in (root / '404.html').read_text(encoding='utf-8')
+          print(f'Checked {len(pages)} HTML pages, their local links, and {len(urls)} sitemap entries.')

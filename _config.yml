@@ -4,7 +4,6 @@ chinese_name: 朱益广
 position: Ph.D. Candidate
 affiliation: Johns Hopkins University
 affiliation_link: https://www.zhuyg.com/
-affiliation_logo: ./assets/img/jhu1.png
 email: yzhu99@jh.edu
 url: "https://zhuyg.com"
 banner_brand: "廣义上是益廣"
@@ -14,12 +13,6 @@ keywords: yiguang zhu, zhu yiguang, zhuyiguang, 朱益广
 canonical: https://zhuyg.com
 description: Ph.D. candidate in the Department of Environmental Health and Engineering at Johns Hopkins University. His research focuses on health policy and new approach methods like microphysiological systems.
 
-# The option is used to enable the Illinois template.
-enable_hopkins_logo: true
-
-# The option is used to show the last update time.
-enable_last_update: false
-
 # Links
 link_type: icon #text/icon
 linkedin: https://www.linkedin.com/in/yiguangzhu/
@@ -28,18 +21,9 @@ resume_link: /assets/files/Resume_Feb_2026_Yiguang.pdf
 
 # Images 
 avatar: ./assets/img/avatar.jpg
-avatar_research: ./assets/img/avatar_research.jpg
-avatar_random: ./assets/img/avatar_random.jpg
-
-# Footnotes
-footnote: Powered by Jekyll and Minimal Light theme.
-footnote_link: https://github.com/yaoyao-liu/minimal-light
-
-# Analytics
 
 # The following files will be removed from the generated website.
 exclude:
-  - build.sh
   - Gemfile
   - Gemfile.lock
   - README.md
