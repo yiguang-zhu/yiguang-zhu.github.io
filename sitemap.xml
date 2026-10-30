@@ -2,14 +2,13 @@
 layout: null
 permalink: /sitemap.xml
 ---
-
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   {% assign base = site.canonical | default: site.url | default: "" %}
 
   {%- comment -%} 1) 普通页面 (pages) {%- endcomment -%}
-  {% for page in site.pages %}
+  {% for page in site.html_pages %}
     {% assign u = page.url | default: "" %}
     {% if u != "" %}
       {% if page.sitemap != false
@@ -24,17 +23,7 @@ permalink: /sitemap.xml
     {% endif %}
   {% endfor %}
 
-  {%- comment -%} 2) 博客文章 (posts) {%- endcomment -%}
-  {% for post in site.posts %}
-    {% if post.sitemap != false %}
-  <url>
-    <loc>{{ base }}{{ post.url | replace: "index.html", "" }}</loc>
-    <lastmod>{{ post.date | default: site.time | date_to_xmlschema }}</lastmod>
-  </url>
-    {% endif %}
-  {% endfor %}
-
-  {%- comment -%} 3) Collections（例如 _lifestyle、_random 等，只要 output: true） {%- endcomment -%}
+  {%- comment -%} 2) Published collections, including Random and any future posts {%- endcomment -%}
   {% for c in site.collections %}
     {% if c.output %}
       {% for doc in c.docs %}
