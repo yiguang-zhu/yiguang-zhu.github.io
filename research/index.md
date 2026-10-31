@@ -5,6 +5,7 @@ title: Research
 permalink: /research/
 description: Publications and perspectives by Yiguang Zhu on new approach methodologies, radon, environmental health, and science policy.
 filters: true
+hidden_topics: [Environmental science]
 ---
 <div class="zc-page-heading">
   <h1>{% include translate.html key='Research' %}</h1>
@@ -18,7 +19,7 @@ filters: true
 <div class="zc-topic-bar" role="group" aria-label="Research topic" data-filter-controls hidden>
   <button type="button" data-filter-key="topic" data-filter-value="all" aria-pressed="true">{% include translate.html key='All topics' %}</button>
   {% assign topics = site.data.research | map: 'topic' | uniq %}
-  {% for topic in topics %}{% assign topic_label = topic | replace: 'New approach methodologies', 'NAMs' %}<button type="button" data-filter-key="topic" data-filter-value="{{ topic | escape }}" aria-pressed="false">{% include translate.html key=topic_label %}</button>{% endfor %}
+  {% for topic in topics %}{% unless page.hidden_topics contains topic %}{% assign topic_label = topic | replace: 'New approach methodologies', 'NAMs' %}<button type="button" data-filter-key="topic" data-filter-value="{{ topic | escape }}" aria-pressed="false">{% include translate.html key=topic_label %}</button>{% endunless %}{% endfor %}
 </div>
 <span class="zc-sr-only" role="status" data-filter-status></span>
 <p class="zc-filter-empty" data-filter-empty hidden>{% include translate.html key='No entries' %}</p>
