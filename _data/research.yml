@@ -6,7 +6,8 @@
   authors: "Zhu, Y., Latshaw, M.W., Locke, P.A."
   venue: "American Journal of Public Health"
   topic: "Science policy"
-  url: "/assets/files/2026-zhu-et-al-bright-spot-closing-door-encouraging-innovation-restricting-foreign-talent.pdf"
+  url: "https://doi.org/10.2105/AJPH.2025.308384"
+  pdf: "/assets/files/2026-zhu-et-al-bright-spot-closing-door-encouraging-innovation-restricting-foreign-talent.pdf"
 
 - title: "From application-first to science-first: A two-phase validation framework for complex in vitro NAMs"
   year: 2026
@@ -15,6 +16,7 @@
   venue: "Clinical Pharmacology & Therapeutics"
   topic: "New approach methodologies"
   url: "https://doi.org/10.1002/cpt.70428"
+  pdf: "/assets/files/2026-zhu-locke-two-phase-validation-framework.pdf"
 
 - title: "Effect of Electrochemical Topology on Detection Sensitivity in MEA Assay for Drug-Induced Cardiotoxicity Screening"
   year: 2025
@@ -23,6 +25,7 @@
   venue: "Biosensors and Bioelectronics"
   topic: "New approach methodologies"
   url: "https://doi.org/10.1016/j.bios.2024.117082"
+  pdf: "/assets/files/2025-kim-et-al-electrochemical-topology-mea.pdf"
 
 - title: "From Roadmap to Reality: Validating NAMs for FDA's Plan to Phase Out Animal Testing"
   year: 2025
@@ -39,6 +42,7 @@
   venue: "International Journal of Radiation Biology"
   topic: "Radon"
   url: "https://doi.org/10.1080/09553002.2025.2588394"
+  pdf: "/assets/files/2025-zhu-et-al-radon-resistant-new-construction.pdf"
 
 - title: "Regulation Updates in China"
   year: 2024
@@ -71,3 +75,4 @@
   venue: "Acta Ecologica Sinica"
   topic: "Environmental science"
   url: "https://doi.org/10.5846/stxb201801150110"
+  pdf: "/assets/files/2019-ye-et-al-soil-warming-cunninghamia-lanceolata.pdf"
