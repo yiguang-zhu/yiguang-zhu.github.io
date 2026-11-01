@@ -66,6 +66,7 @@ body { margin:0; background:light-dark(#fffdfa,#22201d); }
 #zg-site .zc-home-profile { min-width:0; align-self:start; text-align:right; }
 #zg-site .zc-home-portrait { display:block; width:176px; max-width:100%; height:auto; aspect-ratio:1; border-radius:4px; }
 #zg-site .zc-home-links { display:flex; flex-direction:column; align-items:flex-end; margin-top:12px; }
+#zg-site .zc-home-link-group { display:flex; flex-direction:column; align-items:flex-end; }
 #zg-site .zc-home-links a { display:inline-flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:6px; min-height:28px; color:var(--zc-deep); font:400 14px/1.6 var(--zc-ui); }
 #zg-site .zc-home-email { max-width:100%; overflow-wrap:anywhere; }
 #zg-site .zc-file-date { color:var(--zc-muted); font-size:12px; }
@@ -147,9 +148,12 @@ body { margin:0; background:light-dark(#fffdfa,#22201d); }
   #zg-site .zc-language-toggle { padding-left:14px; min-width:42px; }
 }
 @container(max-width:640px) {
-  #zg-site .zc-home-grid { grid-template-columns:1fr; gap:32px; }
-  #zg-site .zc-home-profile { width:176px; max-width:100%; margin:0 auto; }
-  #zg-site .zc-home-portrait { width:152px; margin-left:auto; }
+  #zg-site .zc-home-grid { grid-template-columns:1fr; gap:24px; }
+  #zg-site .zc-home-profile { width:100%; max-width:360px; margin:0 auto; text-align:center; }
+  #zg-site .zc-home-portrait { width:144px; margin:0 auto; }
+  #zg-site .zc-home-links { align-items:center; margin-top:8px; }
+  #zg-site .zc-home-link-group { max-width:100%; flex-direction:row; flex-wrap:wrap; justify-content:center; align-items:center; gap:0 16px; }
+  #zg-site .zc-home-links a { justify-content:center; flex-wrap:nowrap; min-height:44px; gap:5px; }
 }
 @container(max-width:560px) {
   #zg-site .zc-header { padding-top:16px; }
@@ -169,5 +173,6 @@ body { margin:0; background:light-dark(#fffdfa,#22201d); }
   #zg-site .zc-filter-bar { gap:0 20px; }
   #zg-site .zc-topic-bar button { min-height:44px; }
 }
+@container(max-width:320px) { #zg-site .zc-home-link-group { column-gap:6px; } }
 @media(pointer:coarse) { #zg-site .zc-home-links a { min-height:44px; } }
 #zg-site.zc-mobile .zc-site { max-width:390px; }
