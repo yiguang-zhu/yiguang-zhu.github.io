@@ -13,9 +13,7 @@ layout: default
       <a href="{{ person.resume | relative_url }}" target="_blank" rel="noopener noreferrer">{% include translate.html key='Resume' %} <small class="zc-file-date">{% include translate.html key=person.resume_updated %}</small> <span aria-hidden="true">↗</span></a>
       </div>
       <div class="zc-home-link-group">
-      <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
       <a href="{{ person.google_scholar | escape }}" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
-      <a href="{{ person.orcid }}" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a>
       </div>
     </nav>
   </aside>
