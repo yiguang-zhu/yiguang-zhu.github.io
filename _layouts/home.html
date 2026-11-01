@@ -8,9 +8,11 @@ layout: default
     <img class="zc-home-portrait" src="{{ person.portrait | relative_url }}" width="176" height="176" alt="Yiguang Zhu">
     <nav class="zc-home-links" aria-label="Personal links">
       <a class="zc-home-email" href="mailto:{{ person.email }}">{{ person.email }}</a>
-      <a href="{{ person.cv | relative_url }}" target="_blank" rel="noopener noreferrer">{% include translate.html key='CV' %} <small class="zc-file-date">{% include translate.html key=person.documents_updated %}</small> <span aria-hidden="true">↗</span></a>
-      <a href="{{ person.resume | relative_url }}" target="_blank" rel="noopener noreferrer">{% include translate.html key='Resume' %} <small class="zc-file-date">{% include translate.html key=person.documents_updated %}</small> <span aria-hidden="true">↗</span></a>
+      <a href="{{ person.cv | relative_url }}" target="_blank" rel="noopener noreferrer">{% include translate.html key='CV' %} <small class="zc-file-date">{% include translate.html key=person.cv_updated %}</small> <span aria-hidden="true">↗</span></a>
+      <a href="{{ person.resume | relative_url }}" target="_blank" rel="noopener noreferrer">{% include translate.html key='Resume' %} <small class="zc-file-date">{% include translate.html key=person.resume_updated %}</small> <span aria-hidden="true">↗</span></a>
       <a href="{{ person.linkedin }}" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="{{ person.google_scholar | escape }}" target="_blank" rel="noopener noreferrer">Google Scholar <span aria-hidden="true">↗</span></a>
+      <a href="{{ person.orcid }}" target="_blank" rel="noopener noreferrer">ORCID <span aria-hidden="true">↗</span></a>
     </nav>
   </aside>
   <div class="zc-home-content">

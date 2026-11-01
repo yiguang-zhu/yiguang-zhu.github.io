@@ -14,7 +14,7 @@
 | 一篇 Random 的内容 | `_random/` 中对应的 `.md` 文件 |
 | 浏览器与搜索结果里的首页标题 | `index.md` 顶部的 `seo_title` |
 | Research / Random 的页面标题 | 对应文件夹中的 `index.md` 顶部的 `title` |
-| CV、Resume | 在 `assets/files/` 上传 PDF，再修改 `_data/profile.yml` 的路径和日期 |
+| CV、Resume | 在 `assets/files/` 上传 PDF，再修改 `_data/profile.yml` 的路径；日期分别填写 `cv_updated`、`resume_updated` |
 
 在 GitHub 打开文件，点铅笔，修改文字，再点 **Commit changes** 保存。不要删除文件开头成对的 `---`。
 
@@ -82,4 +82,6 @@ category: 调酒
 - 保存后网站不是立即变化，等 GitHub 的发布完成，再刷新。
 - Google 的标题与搜索结果会在重新抓取后逐渐更新，不能保证何时更新或具体排名。
 
-目前 CV 和 Resume 仍是 2026 年 2 月版本，页面已明确标注日期。
+目前 CV 是 2026 年 11 月版本，Resume 是 2026 年 2 月版本。两份文件各自标注日期，更新一份时只修改对应的路径和日期。
+
+首页的 Google Scholar 和 ORCID 链接分别保存在 `_data/profile.yml` 的 `google_scholar` 和 `orcid`。修改后，首页链接和搜索引擎读取的个人身份关联会同步更新。
