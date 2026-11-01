@@ -173,5 +173,6 @@ body { margin:0; background:light-dark(#fffdfa,#22201d); }
   #zg-site .zc-filter-bar { gap:0 20px; }
   #zg-site .zc-topic-bar button { min-height:44px; }
 }
+@container(max-width:320px) { #zg-site .zc-home-link-group { column-gap:6px; } }
 @media(pointer:coarse) { #zg-site .zc-home-links a { min-height:44px; } }
 #zg-site.zc-mobile .zc-site { max-width:390px; }
