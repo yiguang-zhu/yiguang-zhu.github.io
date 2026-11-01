@@ -43,3 +43,4 @@ The Chinese/English switch is temporarily disabled via `language_switcher: false
 The site was originally adapted from [Minimal Light](https://github.com/yaoyao-liu/minimal-light). The original license is retained in `LICENSE`, and bundled third-party assets retain their license notices.
 
 LinkedIn and Instagram logos come from [Bootstrap Icons](https://github.com/twbs/icons), with their MIT license retained in `assets/icons/LICENSE`.
+The ORCID icon comes from [Simple Icons](https://github.com/simple-icons/simple-icons/blob/develop/icons/orcid.svg), distributed under CC0. ORCID is a trademark of ORCID, Inc.
